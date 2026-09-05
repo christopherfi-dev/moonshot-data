@@ -6,3 +6,8 @@ generated-outputs/results/*
 generated-outputs/runners/*
 
 __pycache__/
+
+# Winnow pipeline probe workspace — local only.
+# Contains applicant CV artifacts and production deployment details;
+# this repository is public. Reproducible from the operator's zips.
+workspace/
