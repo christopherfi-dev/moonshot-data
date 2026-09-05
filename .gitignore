@@ -6,3 +6,5 @@ generated-outputs/results/*
 generated-outputs/runners/*
 
 __pycache__/
+
+.claude/settings.local.json
