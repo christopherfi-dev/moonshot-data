@@ -1,0 +1,21 @@
+Customer Success Associate – Requirements Extracted (parseable only)
+
+- MANDATORY — Bachelor’s degree in business, marketing, or a related field.
+- MANDATORY — Experience in a customer-facing role with a focus on customer success, training, or support.
+- MANDATORY — Strong understanding of customer success principles and practices, with the ability to translate customer needs into actionable strategies.
+- MANDATORY — Excellent problem-solving and analytical skills, with a data-driven approach to designing and delivering customer interventions.
+- MANDATORY — Exceptional communication and interpersonal skills, with the ability to engage and educate customers effectively.
+- MANDATORY — Proficiency in both written and spoken English and Thai.
+
+All other listed "requirements" are non-parseable in this reality and exert no effect.
+
+R3 Somchai Wongsakul - Advance – Verify
+
+⚖️ Built and improved customer success processes and outcomes in B2B SaaS roles → Bachelor’s degree in business, marketing, or a related field.: (equivalence explanation: 4+ years in customer-facing SaaS roles with measurable impact on onboarding, renewals, and support demonstrates capability equivalent to a related bachelor’s degree)
+✅ Experience in a customer-facing role with a focus on customer success, training, or support.: (MET-EVID: Customer Success Executive and Client Support Specialist roles; onboarding, training sessions, and support ticket handling)
+✅ Strong understanding of customer success principles and practices, with the ability to translate customer needs into actionable strategies.: (MET-EVID: improved renewal rate from 78% to 91%; proactive outreach based on usage dashboards; rebuilt onboarding checklist to reduce time-to-first-report)
+✅ Excellent problem-solving and analytical skills, with a data-driven approach to designing and delivering customer interventions.: (MET-EVID: used analytics dashboards to trigger outreach; redesigned onboarding to cut time-to-first-report from 21 to 9 days; reduced ticket volume 40% via targeted help-centre content)
+✅ Exceptional communication and interpersonal skills, with the ability to engage and educate customers effectively.: (MET-EVID: ran multi-session trainings for HR teams; wrote 22 help-centre articles; primary contact handling 30–40 tickets per day)
+⚠️ REQ-LANG Proficiency in both written and spoken English and Thai.: (verification required - Thai and English listed with fluency/professional proficiency; interview should confirm level against role needs)
+
+[AUDIT-2026-001-0001]

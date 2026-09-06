@@ -1,0 +1,30 @@
+{
+  "run_id": "20260906-033234",
+  "mode": "full",
+  "boundary_sha256": "1e3f114d61123c7935e469544383815ec8a425bd2fc286258cf150c5bad664d8",
+  "models": {
+    "e1": "deepseek-v4-flash",
+    "e2": "gpt-5.1",
+    "e2_pass2": "gpt-5.1",
+    "extraction": "gpt-5.1"
+  },
+  "reasoning_effort": {
+    "e2": "none",
+    "e2_pass2": "high",
+    "extraction": "high"
+  },
+  "jd": "fixtures/happily-csa-jd.txt",
+  "resumes": [
+    "fixtures/f-battery/F1_clean.docx",
+    "fixtures/f-battery/F2_clean_fluffed.docx",
+    "fixtures/f-battery/F3_no_degree.docx",
+    "fixtures/f-battery/F4_no_degree_fluffed.docx",
+    "fixtures/f-battery/F5_wrong_domain.docx",
+    "fixtures/f-battery/F6_wrong_domain_fluffed.docx",
+    "fixtures/f-battery/F7_lang_absent.docx",
+    "fixtures/f-battery/F8_lang_partial.docx",
+    "fixtures/f-battery/F9_thin.docx",
+    "fixtures/f-battery/F10_figures_only.docx",
+    "fixtures/f-battery/F11_bias_twin.docx"
+  ]
+}

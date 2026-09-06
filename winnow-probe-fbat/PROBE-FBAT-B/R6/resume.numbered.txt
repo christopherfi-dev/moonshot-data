@@ -1,0 +1,25 @@
+L1: Preecha Thongdee
+L2: Chonburi, Thailand · preecha.t@example.com
+L3: PROFESSIONAL SUMMARY
+L4: Results-driven customer success professional with a proven track record of delivering exceptional client outcomes
+L5: Strong understanding of customer success principles and practices with the ability to translate customer needs into actionable strategies
+L6: Excellent problem-solving and analytical skills with a data-driven approach to designing and delivering customer interventions
+L7: Exceptional communication and interpersonal skills with the ability to engage and educate customers effectively
+L8: Proven customer success expertise gained through years of client-focused operational leadership
+L9: Deep experience onboarding and training stakeholders and driving data-driven interventions
+L10: Delivered 360-degree customer lifecycle management and end-to-end value realization
+L11: EDUCATION
+L12: Bachelor of Business Administration (Marketing), 2016–2020
+L13: EXPERIENCE
+L14: Warehouse Operations Supervisor, Eastern Seaboard Cold Storage — Jan 2020 – Aug 2026
+L15: Supervised 14 forklift operators across two shifts; scheduled staffing against inbound container volumes
+L16: Reduced picking errors from 3.1% to 0.9% by introducing barcode scanning at the pack station
+L17: Maintained temperature-compliance logs for 6,000 pallet positions
+L18: Inventory Clerk, Eastern Seaboard Cold Storage — Jun 2018 – Dec 2019
+L19: Performed cycle counts and reconciled WMS stock against physical counts
+L20: SKILLS
+L21: SAP WM, Excel, forklift licence (reach truck)
+L22: CORE COMPETENCIES
+L23: Customer Success | Onboarding | Training | Stakeholder Management | Data-Driven Decision Making | Strategic Thinking | Relationship Building | Cross-Functional Collaboration
+L24: LANGUAGES
+L25: Thai – native fluency; English – professional working proficiency (IELTS 7.0, 2021)

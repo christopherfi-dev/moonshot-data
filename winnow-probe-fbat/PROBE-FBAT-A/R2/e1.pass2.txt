@@ -1,0 +1,1 @@
+Second-pass integrity verified. Existing NULL list stands unchanged.

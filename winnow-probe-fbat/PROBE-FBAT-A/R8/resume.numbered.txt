@@ -1,0 +1,17 @@
+L1: Kanokwan Ratanaporn
+L2: Bangkok, Thailand · kanokwan.r@example.com
+L3: EDUCATION
+L4: Bachelor of Business Administration (Marketing), 2016–2020
+L5: EXPERIENCE
+L6: Customer Success Executive, Sirikan Software Co., Ltd. — Mar 2022 – Aug 2026
+L7: Onboarded 46 B2B accounts onto the HR analytics platform; ran a 3-session training sequence for each new HR team
+L8: Cut time-to-first-report for new accounts from 21 days to 9 days by rebuilding the onboarding checklist
+L9: Reviewed weekly usage dashboards in Metabase and contacted accounts whose logins fell below 2 per week
+L10: Renewal rate on my book rose from 78% to 91% between 2023 and 2025
+L11: Client Support Specialist, Tawan Logistics Platform — Jun 2020 – Feb 2022
+L12: Handled 30–40 tickets per day across email and LINE OA; resolved 85% within one business day
+L13: Wrote 22 help-centre articles in Thai and English; ticket volume on those topics fell 40%
+L14: SKILLS
+L15: HubSpot, Zendesk, Metabase, Google Sheets, LINE Official Account, Notion
+L16: LANGUAGES
+L17: Thai – native fluency; English – basic

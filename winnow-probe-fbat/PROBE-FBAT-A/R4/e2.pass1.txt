@@ -1,0 +1,21 @@
+Customer Success Associate – Requirements Extracted (parseable only)
+
+- MANDATORY — Bachelor’s degree in business, marketing, or a related field.
+- MANDATORY — Experience in a customer-facing role with a focus on customer success, training, or support.
+- MANDATORY — Strong understanding of customer success principles and practices, with the ability to translate customer needs into actionable strategies.
+- MANDATORY — Excellent problem-solving and analytical skills, with a data-driven approach to designing and delivering customer interventions.
+- MANDATORY — Exceptional communication and interpersonal skills, with the ability to engage and educate customers effectively.
+- MANDATORY — Proficiency in both written and spoken English and Thai.
+
+All other listed "requirements" are non-parseable in this reality and exert no effect.
+
+R4 Somchai Wongsakul - Advance – Verify
+
+⚖️ Customer Success Executive and Client Support Specialist roles (2020–2026) → Bachelor’s degree in business, marketing, or a related field.: (equivalence explanation: 4+ years in customer-facing roles in software and platform environments with clear customer success and support impact demonstrates capability equivalent to a related bachelor’s degree)
+✅ Experience in a customer-facing role with a focus on customer success, training, or support.: (MET-EVID: Customer Success Executive managing B2B accounts and onboarding; Client Support Specialist handling 30–40 tickets per day and writing help-centre content)
+✅ Strong understanding of customer success principles and practices, with the ability to translate customer needs into actionable strategies.: (MET-INF: customer success executive role improving renewal rate from 78% to 91% and reducing time-to-first-report via redesigned onboarding)
+✅ Excellent problem-solving and analytical skills, with a data-driven approach to designing and delivering customer interventions.: (MET-INF: used dashboards in Metabase to monitor usage and proactively contact low-activity accounts; rebuilt onboarding checklist to improve time-to-first-report)
+✅ Exceptional communication and interpersonal skills, with the ability to engage and educate customers effectively.: (MET-EVID: ran 3-session training sequences for each new HR team; wrote 22 help-centre articles; managed daily customer tickets)
+⚠️ REQ-LANG Proficiency in both written and spoken English and Thai.: (verification required - Thai and English listed with fluency/professional proficiency; interview should confirm level against role needs)
+
+[AUDIT-2026-001-0001]

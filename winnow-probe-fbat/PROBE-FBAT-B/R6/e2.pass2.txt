@@ -1,0 +1,21 @@
+Customer Success Associate – Requirements Extracted (parseable only)
+
+- MANDATORY — Bachelor’s degree in business, marketing, or a related field.
+- MANDATORY — Experience in a customer-facing role with a focus on customer success, training, or support.
+- MANDATORY — Strong understanding of customer success principles and practices, with the ability to translate customer needs into actionable strategies.
+- MANDATORY — Excellent problem-solving and analytical skills, with a data-driven approach to designing and delivering customer interventions.
+- MANDATORY — Exceptional communication and interpersonal skills, with the ability to engage and educate customers effectively.
+- MANDATORY — Proficiency in both written and spoken English and Thai.
+
+All other listed "requirements" are non-parseable in this reality and exert no effect.
+
+R6 Preecha Thongdee - Do Not Advance
+
+✅ Bachelor’s degree in business, marketing, or a related field.: (MET-EVID) Holds a Bachelor of Business Administration (Marketing), completed 2016–2020.
+❌ Experience in a customer-facing role with a focus on customer success, training, or support.: Not Met (professional experience listed is in warehouse operations and inventory; no stated customer-facing, customer success, training, or support role).
+❌ Strong understanding of customer success principles and practices, with the ability to translate customer needs into actionable strategies.: Not Met (recorded responsibilities describe internal operations and inventory work, without evidence of customer success strategy or translating customer needs into actions).
+✅ Excellent problem-solving and analytical skills, with a data-driven approach to designing and delivering customer interventions.: (MET-EVID) Reduced picking errors from 3.1% to 0.9% by introducing barcode scanning at the pack station, demonstrating data-driven analysis and process intervention impacting service quality.
+✅ Exceptional communication and interpersonal skills, with the ability to engage and educate customers effectively.: (MET-INF) Experience supervising 14 operators across two shifts and managing staffing implies strong communication and interpersonal abilities transferable to engaging and educating customers.
+✅ Proficiency in both written and spoken English and Thai.: (MET-EVID) Languages section lists Thai and English with stated proficiency in both.
+
+[AUDIT-2026-009-0002]

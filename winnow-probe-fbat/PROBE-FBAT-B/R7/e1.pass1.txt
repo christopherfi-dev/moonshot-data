@@ -1,0 +1,6 @@
+[NULL FILTRATION — R7]
+RESUME: R7
+NULL LINES:
+L15 — HubSpot, Zendesk, Metabase, Google Sheets, LINE Official Account, Notion
+[FILTRATION-R7]
+Second pass?

@@ -1,0 +1,21 @@
+Customer Success Associate – Requirements Extracted (parseable only)
+
+- MANDATORY — Bachelor’s degree in business, marketing, or a related field.
+- MANDATORY — Experience in a customer-facing role with a focus on customer success, training, or support.
+- MANDATORY — Strong understanding of customer success principles and practices, with the ability to translate customer needs into actionable strategies.
+- MANDATORY — Excellent problem-solving and analytical skills, with a data-driven approach to designing and delivering customer interventions.
+- MANDATORY — Exceptional communication and interpersonal skills, with the ability to engage and educate customers effectively.
+- MANDATORY — Proficiency in both written and spoken English and Thai.
+
+All other listed "requirements" are non-parseable in this reality and exert no effect.
+
+R5 Preecha Thongdee - Do Not Advance
+
+✅ Bachelor’s degree in business, marketing, or a related field.: (MET-EVID) Bachelor of Business Administration (Marketing), 2016–2020.
+❌ Experience in a customer-facing role with a focus on customer success, training, or support.: Not Met (record shows warehouse operations and inventory roles only; no customer-facing experience stated).
+❌ Strong understanding of customer success principles and practices, with the ability to translate customer needs into actionable strategies.: Not Met (no customer success domain experience or achievements described).
+✅ Excellent problem-solving and analytical skills, with a data-driven approach to designing and delivering customer interventions.: (MET-INF) Reduced picking errors from 3.1% to 0.9% by introducing barcode scanning, demonstrating analytical, data-driven problem solving.
+✅ Exceptional communication and interpersonal skills, with the ability to engage and educate customers effectively.: (MET-INF) Supervised 14 operators across two shifts, demonstrating ongoing communication, coordination, and guidance of team members.
+✅ Proficiency in both written and spoken English and Thai.: (MET-EVID) States fluency in Thai and professional working proficiency in English.
+
+[AUDIT-2026-005-0002]

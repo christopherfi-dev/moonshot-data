@@ -1,0 +1,21 @@
+Customer Success Associate – Requirements Extracted (parseable only)
+
+- MANDATORY — Bachelor’s degree in business, marketing, or a related field.
+- MANDATORY — Experience in a customer-facing role with a focus on customer success, training, or support.
+- MANDATORY — Strong understanding of customer success principles and practices, with the ability to translate customer needs into actionable strategies.
+- MANDATORY — Excellent problem-solving and analytical skills, with a data-driven approach to designing and delivering customer interventions.
+- MANDATORY — Exceptional communication and interpersonal skills, with the ability to engage and educate customers effectively.
+- MANDATORY — Proficiency in both written and spoken English and Thai.
+
+All other listed "requirements" are non-parseable in this reality and exert no effect.
+
+R7 Kanokwan Ratanaporn - Do Not Advance
+
+✅ Bachelor’s degree in business, marketing, or a related field.: (MET-EVID) Bachelor of Business Administration (Marketing), 2016–2020
+✅ Experience in a customer-facing role with a focus on customer success, training, or support.: (MET-EVID) Customer Success Executive, 2022–2026, onboarding B2B accounts and running training; Client Support Specialist, 2020–2022, handling customer tickets
+✅ Strong understanding of customer success principles and practices, with the ability to translate customer needs into actionable strategies.: (MET-EVID) Improved renewal rate from 78% to 91% by monitoring usage dashboards and proactively contacting low-usage accounts; rebuilt onboarding checklist to reduce time-to-first-report
+✅ Excellent problem-solving and analytical skills, with a data-driven approach to designing and delivering customer interventions.: (MET-EVID) Used analytics (usage dashboards, time-to-first-report) to redesign onboarding and outreach, cutting time-to-first-report from 21 to 9 days and improving renewals
+✅ Exceptional communication and interpersonal skills, with the ability to engage and educate customers effectively.: (MET-EVID) Ran 3-session training sequences for each new HR team; wrote 22 help-centre articles that reduced ticket volume by 40%
+❌ Proficiency in both written and spoken English and Thai.: Not Met (record states professional working proficiency in English and explicitly “Thai – none”)
+
+[AUDIT-2026-009-0001]
