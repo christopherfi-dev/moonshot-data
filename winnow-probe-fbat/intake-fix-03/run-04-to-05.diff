@@ -1,0 +1,26 @@
+--- /home/claude/handoff/pipeline-fixes/run.py	2026-09-05 15:47:19.000000000 +0000
++++ run.py	2026-09-06 05:34:07.937871251 +0000
+@@ -142,13 +142,22 @@
+         if rp.suffix.lower() in INTAKE_SUFFIXES:
+             with intake_lock:
+                 rep = intake_doc(rp, cdir)
+-            if rep["status"] != "ok":
++            if rep["status"] in ("blocked", "unreadable"):
+                 print(f"{rid}: intake status '{rep['status']}' ({rpath}) — "
+                       f"withheld from engines; operator review required: "
+                       f"{cdir / 'intake_report.json'}")
+                 audit.record("intake", f"{rid}.intake_status", rep["status"],
+                              {"source": rpath})
+                 return
++            if rep["status"] != "ok":
++                # INTAKE-FIX-03: a degraded extraction is evaluated, flagged.
++                # A non-evaluation is a decline the candidate never sees.
++                failed = [c["name"] for c in rep["checks"] if c["passed"] is False]
++                print(f"{rid}: intake status '{rep['status']}' ({rpath}) — "
++                      f"evaluated with flag {failed}; see "
++                      f"{cdir / 'intake_report.json'}")
++                audit.record("intake", f"{rid}.intake_status", rep["status"],
++                             {"source": rpath, "failed_checks": failed})
+             raw = (cdir / "normalized.txt").read_text()
+             numbered = (cdir / "numbered.txt").read_text()
+             n = rep["lines"]

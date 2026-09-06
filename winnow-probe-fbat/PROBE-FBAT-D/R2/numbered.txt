@@ -1,0 +1,12 @@
+L1: Arisa Boonmee
+L2: Phuket, Thailand · arisa.b@example.com
+L3: EDUCATION
+L4: Bachelor of Business Administration (Marketing), 2016–2020
+L5: EXPERIENCE
+L6: Customer Support Specialist, Nara Digital Services — Feb 2021 – Aug 2026
+L7: Raised customer satisfaction score from 71% to 88% over 2023–2025
+L8: Reduced average first-response time from 6 hours to 40 minutes
+L9: Handled 1,200+ accounts across two regional teams
+L10: Customer Service Officer, Phuket Marine Insurance Brokers — Jan 2019 – Jan 2021
+L11: LANGUAGES
+L12: Thai – native fluency; English – professional working proficiency (IELTS 7.0, 2021)

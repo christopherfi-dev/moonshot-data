@@ -2,7 +2,7 @@
 
 Winnow pipeline. Eleven constructed résumés against the Happily Customer Success Associate JD. `--mode full`, one invocation per run, eleven fixtures per invocation, `--date 2026-09-05`.
 
-Nothing was scored by this session. Every MATCH / MISS mark below is a string comparison of the run's verdict against the pre-registered verdict in `GROUND-TRUTH.md`, printed side by side. Every MISS is quoted in full. No asset, `run.py`, `intake.py`, `engines.py` or `config.json` was added, edited or replaced.
+Nothing was scored by this session. Every MATCH / MISS mark below is a string comparison of the run's verdict against the pre-registered verdict in `GROUND-TRUTH.md`, printed side by side. Every MISS is quoted in full. For runs A and B no asset, `run.py`, `intake.py`, `engines.py` or `config.json` was added, edited or replaced. §13 then installs the ratified INTAKE-FIX-03 / PIPELINE-FIX-05 — two pipeline files, hash verified, assets and config still untouched — and re-runs the two fixtures §2 records as withheld.
 
 ## 0. Execution record
 
@@ -14,12 +14,12 @@ Three points where this execution departs from the brief's literal text. All thr
 
 2. **`EVIDENCE-06 §2` is not in the supplied workspace**, so the byte-for-byte diff of the frozen set against it could not be performed here. The only prior Happily requirement set present is the v28.10 one (9 MANDATORY / 2 PREFERRED). The v27.6 set frozen by Run A is reported verbatim in §1.4 and is 6 MANDATORY / 0 PREFERRED — the shape the brief pre-registered.
 
-3. **The pipeline ran in a local workspace, not over ssh to `129.121.98.193`.** The operator supplied the pipeline as a zip and the provider keys in a PHP config file; both engines were reached over the public API endpoints named in `config.json`. Keys were read into the run process's environment at launch and never written to a second file, printed, or logged. `python-docx` was installed into a throwaway venv — `intake.py` requires it for the DOCX path and it was absent. Nothing under the pipeline tree was edited: the six governed files hash the same before and after (§1.1, §1.2, §1.3).
+3. **The pipeline ran in a local workspace, not over ssh to `129.121.98.193`.** The operator supplied the pipeline as a zip and the provider keys in a PHP config file; both engines were reached over the public API endpoints named in `config.json`. Keys were read into the run process's environment at launch and never written to a second file, printed, or logged. `python-docx` was installed into a throwaway venv — `intake.py` requires it for the DOCX path and it was absent. Nothing under the pipeline tree was edited for runs A and B: the six governed files hash the same before and after (§1.1, §1.2, §1.3). The two replacements §13 installs came later and are hashed on both sides there.
 
 ### 0.1 Headline
 
 - **9 of 11 fixtures produced a verdict.** F9 and F10 were withheld from the engines by the intake operator gate in both runs (§2.1).
-- **Of the nine: 7 MATCH, 2 MISS, 0 A≠B at the verdict level.** F3 and F4 both advanced on a `⚖️` override of the missing degree, in both runs.
+- **Of the nine: 7 MATCH, 2 MISS, 0 A≠B at the verdict level**; with §13's two, the battery closes at **9 MATCH, 2 MISS across all eleven**. F3 and F4 both advanced on a `⚖️` override of the missing degree, in both runs.
 - **Zero protected attributes and zero city strings in any of the twenty finals.** F11's header reads `R11 Pimchanok Srisawat`; all twelve bias markers grep zero, both runs.
 - **Zero figure-bearing lines were NULLed** anywhere, either run — the E1 v2.6 figure clause holds on realistic lines.
 - Line-level A≠B does exist below the verdict: the F5/F6 `❌` set swaps between runs (§8), and the `Delivered 360-degree…` idiom-number line is NULLed in Run A and admitted in Run B (§5, R2/R4).
@@ -32,10 +32,10 @@ Three points where this execution departs from the brief's literal text. All thr
 |---|---|---|---|
 | `assets/stage1-bootstrap-v2.6.txt` | `ded8db1d8da9b468240280b6b99882d8a3fa6465e656a87d60abb8de6d4f8f7a` | `ded8db1d8da9b468240280b6b99882d8a3fa6465e656a87d60abb8de6d4f8f7a` | MATCH |
 | `assets/stage3-bootstrap-v27.6.txt` | `c4b303113060f868a33a4b98c692b03e5194d57549a8489e4907f67d9527876d` | `c4b303113060f868a33a4b98c692b03e5194d57549a8489e4907f67d9527876d` | MATCH |
-| `intake.py` | `695ea40e591837615e2a73eabae99296d3138f3825ac09d584ed5ca12b5d2370` | `695ea40e591837615e2a73eabae99296d3138f3825ac09d584ed5ca12b5d2370` | MATCH |
-| `run.py` | `50c1b3488b7256457fb0c0de58b4d6913fb80050b013e6cd464b8f23940e18a4` | `50c1b3488b7256457fb0c0de58b4d6913fb80050b013e6cd464b8f23940e18a4` | MATCH |
+| `intake.py` | `695ea40e591837615e2a73eabae99296d3138f3825ac09d584ed5ca12b5d2370` | `4b8955a44aee03c0fc745935792ae27106ca2f4c5904184fbda920090607e58a` | **MISMATCH** |
+| `run.py` | `50c1b3488b7256457fb0c0de58b4d6913fb80050b013e6cd464b8f23940e18a4` | `e1b0a6be026720bc72815b4f9f4fc37bfd459e8162a5b2de3c34607dea027d8a` | **MISMATCH** |
 
-All four match: **True**. `load_verified_assets()` ran before and after: silent, exit 0, both times.
+All four match: **False**. `load_verified_assets()` ran before and after: silent, exit 0, both times.
 
 ### 1.2 config.json, verbatim
 
@@ -5752,4 +5752,1036 @@ R11 Pimchanok Srisawat - Advance
 
 [AUDIT-2026-009-0002]
 ```
+
+
+## 13. Addendum — INTAKE-FIX-03 / PIPELINE-FIX-05, and the F9/F10 re-run
+
+Same session, same workspace, no halts. `FBAT-ADDENDUM-F9-F10.md` (master thread, 2026-09-06) installs two replacement pipeline files and re-runs the two fixtures that §2 recorded as withheld. Assets, manifest and config are untouched — still E1 v2.6, E2 v27.6.
+
+### 13.1 Install — hashes and compile check
+
+| file | superseded (measured before) | installed (measured after) | brief | |
+|---|---|---|---|---|
+| `intake.py` | `695ea40e591837615e2a73eabae99296d3138f3825ac09d584ed5ca12b5d2370` | `4b8955a44aee03c0fc745935792ae27106ca2f4c5904184fbda920090607e58a` | `4b8955a44aee03c0fc745935792ae27106ca2f4c5904184fbda920090607e58a` | MATCH |
+| `run.py` | `50c1b3488b7256457fb0c0de58b4d6913fb80050b013e6cd464b8f23940e18a4` | `e1b0a6be026720bc72815b4f9f4fc37bfd459e8162a5b2de3c34607dea027d8a` | `e1b0a6be026720bc72815b4f9f4fc37bfd459e8162a5b2de3c34607dea027d8a` | MATCH |
+
+Both installed hashes match the brief: **True**. The superseded hashes are the ones §1.1 verified before runs A and B, so the file that was replaced is the file the brief says is being superseded.
+
+Untouched, measured after the install — identical to §1.1:
+
+| file | sha256 |
+|---|---|
+| `config.json` | `f162998b2ff30505c9363e8fbf9d7457ca68af1dbd6d516affcb69ce309496fc` |
+| `manifest.json` | `128795016478278da8d2581288b7bbb58132fc7d293a62618d5de78372bcb24e` |
+| `assets/stage1-bootstrap-v2.6.txt` | `ded8db1d8da9b468240280b6b99882d8a3fa6465e656a87d60abb8de6d4f8f7a` |
+| `assets/stage3-bootstrap-v27.6.txt` | `c4b303113060f868a33a4b98c692b03e5194d57549a8489e4907f67d9527876d` |
+
+`python -m py_compile intake.py run.py` — silent, exit 0. `load_verified_assets()` — silent, exit 0, before the install and after. No asset was added, edited or replaced; `manifest.json` and `config.json` were not opened for writing.
+
+### 13.2 Intake — the two fixtures now read `ok`
+
+| run | R# | fixture | status | lines | extractor | V-X1 | V-X2 | V-X3 | V-X4 |
+|---|---|---|---|---|---|---|---|---|---|
+| C | R1 | F9_thin | **ok** | 9 | python-docx | PASS | PASS | SKIP | PASS |
+| C | R2 | F10_figures_only | **ok** | 12 | python-docx | PASS | PASS | SKIP | PASS |
+| D | R1 | F9_thin | **ok** | 9 | python-docx | PASS | PASS | SKIP | PASS |
+| D | R2 | F10_figures_only | **ok** | 12 | python-docx | PASS | PASS | SKIP | PASS |
+
+V-X1 `detail` and `evidence`, verbatim, all four:
+
+```
+C/R1  F9_thin
+  detail:   "text extracted"
+  evidence: {"per_page_chars": [328]}
+```
+```
+C/R2  F10_figures_only
+  detail:   "text extracted"
+  evidence: {"per_page_chars": [480]}
+```
+```
+D/R1  F9_thin
+  detail:   "text extracted"
+  evidence: {"per_page_chars": [328]}
+```
+```
+D/R2  F10_figures_only
+  detail:   "text extracted"
+  evidence: {"per_page_chars": [480]}
+```
+The addendum predicted `text extracted`, `per_page_chars` `[328]` and `[480]`. **Both hold, in both runs.** The character counts are unchanged from §2 — the same documents, the same extraction; what changed is that 328 and 480 non-space characters are no longer a validator failure. V-X1's non-PDF branch now asks only whether any text came out.
+
+Neither run printed an intake flag line: `run.py`'s new `degraded-operator-review` → evaluate-with-flag path was not exercised, because neither fixture is degraded any more. No `intake_status` record appears in either `audit.json`.
+
+### 13.3 Verdicts
+
+| fixture | expected (GROUND-TRUTH.md) | run C | run D | mark |
+|---|---|---|---|---|
+| F9_thin | Advance | Advance | Advance | MATCH |
+| F10_figures_only | Advance | Advance | Advance | MATCH |
+
+Headers verbatim, pass 1 → pass 2 → final:
+
+| run | fixture | E2 pass 1 | E2 pass 2 | final |
+|---|---|---|---|---|
+| C | F9_thin | `R1 Arisa Boonmee - Advance – Verify` | `R1 Arisa Boonmee - Advance` | `R1 Arisa Boonmee - Advance` |
+| C | F10_figures_only | `R2 Arisa Boonmee - Advance – Verify` | `R2 Arisa Boonmee - Advance` | `R2 Arisa Boonmee - Advance` |
+| D | F9_thin | `R1 Arisa Boonmee - Advance – Verify` | `R1 Arisa Boonmee - Advance` | `R1 Arisa Boonmee - Advance` |
+| D | F10_figures_only | `R2 Arisa Boonmee - Advance – Verify` | `R2 Arisa Boonmee - Advance` | `R2 Arisa Boonmee - Advance` |
+
+**Both fixtures Advance, in both runs.** F9 and F10 were the last two rows of §3 with no run value; they now have one, and it is the pre-registered one. The F-battery verdict table stands at **9 MATCH, 2 MISS, 0 disagreements between paired runs**, across all eleven fixtures.
+
+**RECORD — four more second-pass reversals.** Every one of the four E2 pass-1 outputs returned `Advance – Verify`; every one of the four pass 2s corrected it to `Advance`. Added to §9.1's nine, the second pass has now changed the verdict on 13 of 22 evaluations in this battery.
+
+### 13.4 F9 / F10 as a pair
+
+Same verdict in both runs: **yes** — all four are `Advance`. Every requirement carries `✅` in all four evaluations; no `❌`, `⚖️` or `⚠️` anywhere. The pair differs only in evidence tag:
+
+| requirement | C · F9 | C · F10 | | D · F9 | D · F10 | |
+|---|---|---|---|---|---|---|
+| Bachelor's degree | MET-EVID | MET-EVID |  | MET-EVID | MET-EVID |  |
+| customer-facing role | MET-INF | MET-EVID | **→ EVID** | MET-EVID | MET-INF | **↓ INF** |
+| CS principles | MET-INF | MET-EVID | **→ EVID** | MET-INF | MET-INF |  |
+| problem-solving / analytical | MET-INF | MET-EVID | **→ EVID** | MET-INF | MET-EVID | **→ EVID** |
+| communication / interpersonal | MET-INF | MET-INF |  | MET-INF | MET-INF |  |
+| English and Thai | MET-EVID | MET-EVID |  | MET-EVID | MET-EVID |  |
+
+**Run C: three requirements move `MET-INF` → `MET-EVID` on F10.** Run D: one moves up, and one moves the other way. Every line that differs in tag within the pair, both runs, quoted in full:
+
+#### Run C
+*customer-facing role* — F9 `MET-INF` → F10 `MET-EVID`
+```
+F9:  ✅ Experience in a customer-facing role with a focus on customer success, training, or support.: (MET-INF — Customer Support Specialist and Customer Service Officer roles are customer-facing with a support focus)
+
+F10: ✅ Experience in a customer-facing role with a focus on customer success, training, or support.: (MET-EVID — Customer Support Specialist 2021–2026 and Customer Service Officer 2019–2021 in front-line customer support and service roles)
+```
+*CS principles* — F9 `MET-INF` → F10 `MET-EVID`
+```
+F9:  ✅ Strong understanding of customer success principles and practices, with the ability to translate customer needs into actionable strategies.: (MET-INF — Multi-year customer support and service roles imply applying customer-focused practices and translating customer needs into actions)
+
+F10: ✅ Strong understanding of customer success principles and practices, with the ability to translate customer needs into actionable strategies.: (MET-EVID — Raised customer satisfaction score from 71% to 88% over 2023–2025 while managing 1,200+ accounts, demonstrating use of customer insights to drive improvements)
+```
+*problem-solving / analytical* — F9 `MET-INF` → F10 `MET-EVID`
+```
+F9:  ✅ Excellent problem-solving and analytical skills, with a data-driven approach to designing and delivering customer interventions.: (MET-INF — Sustained work in customer support and service typically requires structured problem-solving and analytical handling of customer issues)
+
+F10: ✅ Excellent problem-solving and analytical skills, with a data-driven approach to designing and delivering customer interventions.: (MET-EVID — Reduced average first-response time from 6 hours to 40 minutes and significantly increased CSAT, indicating data analysis and targeted process changes)
+```
+
+#### Run D
+*customer-facing role* — F9 `MET-EVID` → F10 `MET-INF`
+```
+F9:  ✅ Experience in a customer-facing role with a focus on customer success, training, or support.: (MET-EVID — Customer Support Specialist and Customer Service Officer roles providing ongoing customer-facing support)
+
+F10: ✅ Experience in a customer-facing role with a focus on customer success, training, or support.: (MET-INF — Customer Support Specialist and Customer Service Officer roles handling customer issues and accounts)
+```
+*problem-solving / analytical* — F9 `MET-INF` → F10 `MET-EVID`
+```
+F9:  ✅ Excellent problem-solving and analytical skills, with a data-driven approach to designing and delivering customer interventions.: (MET-INF — Structured customer support work involves diagnosing issues and using customer information to resolve problems and improve service)
+
+F10: ✅ Excellent problem-solving and analytical skills, with a data-driven approach to designing and delivering customer interventions.: (MET-EVID — Reduced average first-response time from 6 hours to 40 minutes and improved satisfaction scores using measurable performance metrics)
+```
+
+GROUND-TRUTH's F9/F10 criterion is *same verdict; F10's three figure lines admitted by E1 in every run; at least one F10 line moves NO-CONTRA/MET-INF → MET-EVID*. Same verdict: yes. Figures admitted: yes (§13.5). At least one line moves: **yes in both runs** — three in C, one in D. The criterion holds.
+
+**RECORD — zero `NO-CONTRA` tags in any of the four evaluations.** GROUND-TRUTH pre-registered F9 as *title → domain (MET-INF); silence → NO-CONTRA*. The first half holds: the dated titles carry the customer-facing requirement by inference. The second does not. On the requirements where F9's record is simply silent — customer-success principles, problem-solving, communication — E2 returned `✅ MET-INF` in all four evaluations, reasoning from what the roles imply, never `✅ NO-CONTRA`. The verdict is the pre-registered one; the route to it is not.
+
+**RECORD — the pair inverts on one requirement in run D.** *Experience in a customer-facing role* is `MET-EVID` on **F9** and `MET-INF` on **F10** in run D, the opposite of run C and the opposite of the direction the fixture pair was built to test: F10 is F9 plus three figure lines, and nothing was removed. In run D, F9's bare dated titles earned direct-evidence status while the same titles plus three quantified achievements earned inference. Both lines quoted above.
+
+### 13.5 E1 — NULL lists
+
+**C / R1 — F9_thin**, `null_list.txt` verbatim:
+```
+[NULL FILTRATION — R1]
+RESUME: R1
+NULL LINES: none
+[FILTRATION-R1]
+Second pass?
+```
+**C / R2 — F10_figures_only**, `null_list.txt` verbatim:
+```
+[NULL FILTRATION — R2]
+RESUME: R2
+NULL LINES: none
+[FILTRATION-R2]
+Second pass?
+```
+**D / R1 — F9_thin**, `null_list.txt` verbatim:
+```
+[NULL FILTRATION — R1]
+RESUME: R1
+NULL LINES: none
+[FILTRATION-R1]
+Second pass?
+```
+**D / R2 — F10_figures_only**, `null_list.txt` verbatim:
+```
+[NULL FILTRATION — R2]  
+RESUME: R2  
+NULL LINES: none  
+[FILTRATION-R2]  
+Second pass?
+```
+**All four NULL lists are empty.** `NULL LINES: none` — the first genuinely empty NULL lists anywhere in this battery. It is consistent with §5.3: the only NULL on any *clean* F-battery fixture was the `SKILLS` product line, and neither F9 nor F10 has a `SKILLS` section. Both fixtures are pre-registered as carrying no fluff, and E1 withheld nothing from either.
+
+F10's three figure lines — the point of the fixture:
+
+| run | line | text | NULLed |
+|---|---|---|---|
+| C | L7 | Raised customer satisfaction score from 71% to 88% over 2023–2025 | no |
+| C | L8 | Reduced average first-response time from 6 hours to 40 minutes | no |
+| C | L9 | Handled 1,200+ accounts across two regional teams | no |
+| D | L7 | Raised customer satisfaction score from 71% to 88% over 2023–2025 | no |
+| D | L8 | Reduced average first-response time from 6 hours to 40 minutes | no |
+| D | L9 | Handled 1,200+ accounts across two regional teams | no |
+
+Admitted in every run, as required. E1's pass 2 returned the short confirming form on all four candidates, so pass 1 stands as the NULL list in each case:
+
+```
+Second-pass integrity verified. Existing NULL list stands unchanged.
+```
+
+### 13.6 Headers, city scan, invariants
+
+Headers, all four finals: `R1 Arisa Boonmee - Advance`, `R2 Arisa Boonmee - Advance`, `R1 Arisa Boonmee - Advance`, `R2 Arisa Boonmee - Advance`. The fixture's own header line is `Arisa Boonmee` with `Phuket, Thailand` beside it; the name survives, the city does not.
+
+City scan, all four finals:
+
+| run | fixture | Phuket | Thailand | Bangkok | Chiang Mai | Chonburi | total |
+|---|---|---|---|---|---|---|---|
+| C | F9_thin | 0 | 0 | 0 | 0 | 0 | 0 |
+| C | F10_figures_only | 0 | 0 | 0 | 0 | 0 | 0 |
+| D | F9_thin | 0 | 0 | 0 | 0 | 0 | 0 |
+| D | F10_figures_only | 0 | 0 | 0 | 0 | 0 | 0 |
+
+Grand total: **0**.
+
+Invariants:
+
+| run | fixture | `L#` | `Summary` | `PREFERRED` | `Second pass?` final | `Second pass?` NULL list | after audit id | pass 1 an evaluation | pass 2 full |
+|---|---|---|---|---|---|---|---|---|---|
+| C | F9_thin | 0 | 0 | 0 | 0 | **1** | empty | yes | yes |
+| C | F10_figures_only | 0 | 0 | 0 | 0 | **1** | empty | yes | yes |
+| D | F9_thin | 0 | 0 | 0 | 0 | **1** | empty | yes | yes |
+| D | F10_figures_only | 0 | 0 | 0 | 0 | **1** | empty | yes | yes |
+
+`Second pass?` still trails every E1 pass-1 output, as §9.1 recorded. Everything else is clean.
+
+**Extraction:** both runs cache-hit. `audit.json` records `extraction / requirement_set.cache_hit` on the same key as run A (`de3157cc…-c4b30311…`), and both runs' `requirement_set.txt` is byte-identical to the set run A froze: **True** (C) and **True** (D). Replacing `intake.py` and `run.py` did not disturb the frozen set.
+
+**Calls and tokens:**
+
+| run | attempts | failed | model | calls | prompt | completion | total |
+|---|---|---|---|---|---|---|---|
+| C | 8 | 0 | deepseek-v4-flash | 4 | 29282 | 2019 | 31301 |
+|  |  |  | gpt-5.1 | 4 | 27004 | 8301 | 35305 |
+| D | 8 | 0 | deepseek-v4-flash | 4 | 29332 | 1980 | 31312 |
+|  |  |  | gpt-5.1 | 4 | 27059 | 11121 | 38180 |
+
+16 calls across the two runs — 4 E1 and 4 E2 per run, zero extraction (cache hit), against the addendum's estimate of ~12. Every call `finish_reason: stop` on the first attempt; zero failures, zero retries.
+
+**C vs D per-line diff of both evaluations:**
+
+*R1 F9_thin*
+```diff
+--- C/R1/evaluation.txt
++++ D/R1/evaluation.txt
+@@ -11,11 +11,11 @@
+ 
+ R1 Arisa Boonmee - Advance
+ 
+-✅ Bachelor’s degree in business, marketing, or a related field.: (MET-EVID — Bachelor of Business Administration (Marketing), 2016–2020)
+-✅ Experience in a customer-facing role with a focus on customer success, training, or support.: (MET-INF — Customer Support Specialist and Customer Service Officer roles are customer-facing with a support focus)
+-✅ Strong understanding of customer success principles and practices, with the ability to translate customer needs into actionable strategies.: (MET-INF — Multi-year customer support and service roles imply applying customer-focused practices and translating customer needs into actions)
+-✅ Excellent problem-solving and analytical skills, with a data-driven approach to designing and delivering customer interventions.: (MET-INF — Sustained work in customer support and service typically requires structured problem-solving and analytical handling of customer issues)
+-✅ Exceptional communication and interpersonal skills, with the ability to engage and educate customers effectively.: (MET-INF — Customer Support Specialist and Customer Service Officer roles depend on ongoing customer communication and relationship management)
+-✅ Proficiency in both written and spoken English and Thai.: (MET-EVID — Thai fluency and English professional working proficiency explicitly stated)
++✅ Bachelor’s degree in business, marketing, or a related field.: (MET-EVID — Bachelor of Business Administration in Marketing completed 2016–2020)
++✅ Experience in a customer-facing role with a focus on customer success, training, or support.: (MET-EVID — Customer Support Specialist and Customer Service Officer roles providing ongoing customer-facing support)
++✅ Strong understanding of customer success principles and practices, with the ability to translate customer needs into actionable strategies.: (MET-INF — Several years in customer support and service roles addressing customer needs and helping improve their outcomes)
++✅ Excellent problem-solving and analytical skills, with a data-driven approach to designing and delivering customer interventions.: (MET-INF — Structured customer support work involves diagnosing issues and using customer information to resolve problems and improve service)
++✅ Exceptional communication and interpersonal skills, with the ability to engage and educate customers effectively.: (MET-INF — Customer-facing support and service roles require clear communication and relationship-building with customers)
++✅ Proficiency in both written and spoken English and Thai.: (MET-EVID — Record states Thai fluency and English professional working proficiency)
+ 
+-[AUDIT-2026-009-0002]
++[AUDIT-2026-001-0002]
+```
+
+*R2 F10_figures_only*
+```diff
+--- C/R2/evaluation.txt
++++ D/R2/evaluation.txt
+@@ -11,11 +11,11 @@
+ 
+ R2 Arisa Boonmee - Advance
+ 
+-✅ Bachelor’s degree in business, marketing, or a related field.: (MET-EVID — Bachelor of Business Administration (Marketing), 2016–2020)
+-✅ Experience in a customer-facing role with a focus on customer success, training, or support.: (MET-EVID — Customer Support Specialist 2021–2026 and Customer Service Officer 2019–2021 in front-line customer support and service roles)
+-✅ Strong understanding of customer success principles and practices, with the ability to translate customer needs into actionable strategies.: (MET-EVID — Raised customer satisfaction score from 71% to 88% over 2023–2025 while managing 1,200+ accounts, demonstrating use of customer insights to drive improvements)
+-✅ Excellent problem-solving and analytical skills, with a data-driven approach to designing and delivering customer interventions.: (MET-EVID — Reduced average first-response time from 6 hours to 40 minutes and significantly increased CSAT, indicating data analysis and targeted process changes)
+-✅ Exceptional communication and interpersonal skills, with the ability to engage and educate customers effectively.: (MET-INF — Multi-year customer-facing support and service roles handling 1,200+ accounts)
++✅ Bachelor’s degree in business, marketing, or a related field.: (MET-EVID — Bachelor of Business Administration in Marketing completed)
++✅ Experience in a customer-facing role with a focus on customer success, training, or support.: (MET-INF — Customer Support Specialist and Customer Service Officer roles handling customer issues and accounts)
++✅ Strong understanding of customer success principles and practices, with the ability to translate customer needs into actionable strategies.: (MET-INF — Raised customer satisfaction score from 71% to 88% while managing a large account base, indicating effective customer success strategies)
++✅ Excellent problem-solving and analytical skills, with a data-driven approach to designing and delivering customer interventions.: (MET-EVID — Reduced average first-response time from 6 hours to 40 minutes and improved satisfaction scores using measurable performance metrics)
++✅ Exceptional communication and interpersonal skills, with the ability to engage and educate customers effectively.: (MET-INF — Multi-year customer-facing support and service roles, serving as primary contact for 1,200+ accounts across teams)
+ ✅ Proficiency in both written and spoken English and Thai.: (MET-EVID — Thai fluency and English professional working proficiency stated)
+ 
+ [AUDIT-2026-002-0002]
+```
+
+### 13.7 What the fix did, and what it did not
+
+**Did.** The two fixtures §2 recorded as withheld are now evaluated, and both return the verdict GROUND-TRUTH pre-registered. The F9/F10 pair — the figures test, recorded in §4 as unmeasurable — is measurable, and it passes: same verdict, figures admitted, at least one tag moving to `MET-EVID`. Nothing else in the battery moved: the frozen requirement set, the assets, and the nine fixtures already evaluated are untouched.
+
+**Did not.** Three findings from §2 and §5 are unchanged by this fix and remain open:
+
+- **V-X3 still does not run** on any DOCX. The fix rewrote V-X1's question; V-X3 has no secondary extractor on the DOCX path and reports `NOT RUN` on all four candidates here too.
+- **The `unreadable` status and the evaluate-with-flag path are unexercised by this probe.** Both fixtures came back `ok`, so neither new branch of `run.py` ran. The ratification's own verification table covers them on synthetic PDFs; this probe does not.
+- **`Second pass?` still trails every E1 pass-1 output** and still reaches E2 inside the NULL list.
+
+And one new one: **the tag route to `Advance` on a silent record is `MET-INF`, not `NO-CONTRA`** (§13.4). That is a difference between the asset's stated doctrine and its behaviour on the exact fixture built to test it, and no verdict in this battery would have changed had it gone the other way — which is why it is a record and not a MISS.
+
+### 13.8 Every artifact, both passes, both fixtures, both runs
+
+#### Appendix C — Run PROBE-FBAT-C, artifacts
+
+##### RUN C `run.json`
+```
+{
+  "run_id": "20260906-054938",
+  "mode": "full",
+  "boundary_sha256": "5dbd88ae9d8698d29e9b936a3a2e11bceafa57958301956b656e0bb57ec4718c",
+  "models": {
+    "e1": "deepseek-v4-flash",
+    "e2": "gpt-5.1",
+    "e2_pass2": "gpt-5.1",
+    "extraction": "gpt-5.1"
+  },
+  "reasoning_effort": {
+    "e2": "none",
+    "e2_pass2": "high",
+    "extraction": "high"
+  },
+  "jd": "fixtures/happily-csa-jd.txt",
+  "resumes": [
+    "fixtures/f-battery/F9_thin.docx",
+    "fixtures/f-battery/F10_figures_only.docx"
+  ]
+}
+```
+
+##### RUN C `requirement_set.txt`
+```
+Customer Success Associate – Requirements Extracted (parseable only)
+
+- MANDATORY — Bachelor’s degree in business, marketing, or a related field.
+- MANDATORY — Experience in a customer-facing role with a focus on customer success, training, or support.
+- MANDATORY — Strong understanding of customer success principles and practices, with the ability to translate customer needs into actionable strategies.
+- MANDATORY — Excellent problem-solving and analytical skills, with a data-driven approach to designing and delivering customer interventions.
+- MANDATORY — Exceptional communication and interpersonal skills, with the ability to engage and educate customers effectively.
+- MANDATORY — Proficiency in both written and spoken English and Thai.
+
+All other listed "requirements" are non-parseable in this reality and exert no effect.
+```
+
+##### RUN C R1 F9_thin `intake_report.json`
+```
+{
+  "source": "F9_thin.docx",
+  "extractor": "python-docx",
+  "notes": [],
+  "pages": 1,
+  "lines": 9,
+  "status": "ok",
+  "normalization": {
+    "invisible_removed": {},
+    "soft_wraps_rejoined": 0
+  },
+  "checks": [
+    {
+      "name": "V-X1",
+      "passed": true,
+      "detail": "text extracted",
+      "evidence": {
+        "per_page_chars": [
+          328
+        ]
+      }
+    },
+    {
+      "name": "V-X2",
+      "passed": true,
+      "detail": "clean",
+      "evidence": {
+        "replacement_lines": [],
+        "mojibake": []
+      }
+    },
+    {
+      "name": "V-X3",
+      "passed": null,
+      "detail": "NOT RUN \u2014 pdftotext unavailable (recorded, not a pass)",
+      "evidence": {}
+    },
+    {
+      "name": "V-X4",
+      "passed": true,
+      "detail": "normalized text preserves every visible character",
+      "evidence": {
+        "skeleton_equal": true,
+        "compared_in": "NFC"
+      }
+    }
+  ]
+}
+```
+
+##### RUN C R1 F9_thin `numbered.txt`
+```
+L1: Arisa Boonmee
+L2: Phuket, Thailand · arisa.b@example.com
+L3: EDUCATION
+L4: Bachelor of Business Administration (Marketing), 2016–2020
+L5: EXPERIENCE
+L6: Customer Support Specialist, Nara Digital Services — Feb 2021 – Aug 2026
+L7: Customer Service Officer, Phuket Marine Insurance Brokers — Jan 2019 – Jan 2021
+L8: LANGUAGES
+L9: Thai – native fluency; English – professional working proficiency (IELTS 7.0, 2021)
+```
+
+##### RUN C R1 F9_thin `e1.pass1.txt`
+```
+[NULL FILTRATION — R1]
+RESUME: R1
+NULL LINES: none
+[FILTRATION-R1]
+Second pass?
+```
+
+##### RUN C R1 F9_thin `e1.pass2.txt`
+```
+Second-pass integrity verified. Existing NULL list stands unchanged.
+```
+
+##### RUN C R1 F9_thin `null_list.txt`
+```
+[NULL FILTRATION — R1]
+RESUME: R1
+NULL LINES: none
+[FILTRATION-R1]
+Second pass?
+```
+
+##### RUN C R1 F9_thin `e2.pass1.txt`
+```
+Customer Success Associate – Requirements Extracted (parseable only)
+
+- MANDATORY — Bachelor’s degree in business, marketing, or a related field.
+- MANDATORY — Experience in a customer-facing role with a focus on customer success, training, or support.
+- MANDATORY — Strong understanding of customer success principles and practices, with the ability to translate customer needs into actionable strategies.
+- MANDATORY — Excellent problem-solving and analytical skills, with a data-driven approach to designing and delivering customer interventions.
+- MANDATORY — Exceptional communication and interpersonal skills, with the ability to engage and educate customers effectively.
+- MANDATORY — Proficiency in both written and spoken English and Thai.
+
+All other listed "requirements" are non-parseable in this reality and exert no effect.
+
+R1 Arisa Boonmee - Advance – Verify
+
+✅ Bachelor’s degree in business, marketing, or a related field.: (MET-EVID — Bachelor of Business Administration (Marketing), 2016–2020)
+✅ Experience in a customer-facing role with a focus on customer success, training, or support.: (MET-INF — Customer Support Specialist and Customer Service Officer roles are customer-facing with support focus)
+✅ Strong understanding of customer success principles and practices, with the ability to translate customer needs into actionable strategies.: (MET-INF — Multi-year customer support and service roles imply applied customer success and needs-translation experience)
+✅ Excellent problem-solving and analytical skills, with a data-driven approach to designing and delivering customer interventions.: (MET-INF — Sustained work in customer support and service typically requires problem-solving and analytical handling of customer issues)
+✅ Exceptional communication and interpersonal skills, with the ability to engage and educate customers effectively.: (MET-INF — Customer Support Specialist and Customer Service Officer roles require ongoing customer communication and relationship management)
+⚠️ REQ-LANG Proficiency in both written and spoken English and Thai.: (verification required — Thai and English listed with fluency/proficiency indications; interview should confirm level against role needs)
+
+[AUDIT-2026-009-0001]
+```
+
+##### RUN C R1 F9_thin `e2.pass2.txt`
+```
+Customer Success Associate – Requirements Extracted (parseable only)
+
+- MANDATORY — Bachelor’s degree in business, marketing, or a related field.
+- MANDATORY — Experience in a customer-facing role with a focus on customer success, training, or support.
+- MANDATORY — Strong understanding of customer success principles and practices, with the ability to translate customer needs into actionable strategies.
+- MANDATORY — Excellent problem-solving and analytical skills, with a data-driven approach to designing and delivering customer interventions.
+- MANDATORY — Exceptional communication and interpersonal skills, with the ability to engage and educate customers effectively.
+- MANDATORY — Proficiency in both written and spoken English and Thai.
+
+All other listed "requirements" are non-parseable in this reality and exert no effect.
+
+R1 Arisa Boonmee - Advance
+
+✅ Bachelor’s degree in business, marketing, or a related field.: (MET-EVID — Bachelor of Business Administration (Marketing), 2016–2020)
+✅ Experience in a customer-facing role with a focus on customer success, training, or support.: (MET-INF — Customer Support Specialist and Customer Service Officer roles are customer-facing with a support focus)
+✅ Strong understanding of customer success principles and practices, with the ability to translate customer needs into actionable strategies.: (MET-INF — Multi-year customer support and service roles imply applying customer-focused practices and translating customer needs into actions)
+✅ Excellent problem-solving and analytical skills, with a data-driven approach to designing and delivering customer interventions.: (MET-INF — Sustained work in customer support and service typically requires structured problem-solving and analytical handling of customer issues)
+✅ Exceptional communication and interpersonal skills, with the ability to engage and educate customers effectively.: (MET-INF — Customer Support Specialist and Customer Service Officer roles depend on ongoing customer communication and relationship management)
+✅ Proficiency in both written and spoken English and Thai.: (MET-EVID — Thai fluency and English professional working proficiency explicitly stated)
+
+[AUDIT-2026-009-0002]
+```
+
+##### RUN C R1 F9_thin `evaluation.txt`
+```
+Customer Success Associate – Requirements Extracted (parseable only)
+
+- MANDATORY — Bachelor’s degree in business, marketing, or a related field.
+- MANDATORY — Experience in a customer-facing role with a focus on customer success, training, or support.
+- MANDATORY — Strong understanding of customer success principles and practices, with the ability to translate customer needs into actionable strategies.
+- MANDATORY — Excellent problem-solving and analytical skills, with a data-driven approach to designing and delivering customer interventions.
+- MANDATORY — Exceptional communication and interpersonal skills, with the ability to engage and educate customers effectively.
+- MANDATORY — Proficiency in both written and spoken English and Thai.
+
+All other listed "requirements" are non-parseable in this reality and exert no effect.
+
+R1 Arisa Boonmee - Advance
+
+✅ Bachelor’s degree in business, marketing, or a related field.: (MET-EVID — Bachelor of Business Administration (Marketing), 2016–2020)
+✅ Experience in a customer-facing role with a focus on customer success, training, or support.: (MET-INF — Customer Support Specialist and Customer Service Officer roles are customer-facing with a support focus)
+✅ Strong understanding of customer success principles and practices, with the ability to translate customer needs into actionable strategies.: (MET-INF — Multi-year customer support and service roles imply applying customer-focused practices and translating customer needs into actions)
+✅ Excellent problem-solving and analytical skills, with a data-driven approach to designing and delivering customer interventions.: (MET-INF — Sustained work in customer support and service typically requires structured problem-solving and analytical handling of customer issues)
+✅ Exceptional communication and interpersonal skills, with the ability to engage and educate customers effectively.: (MET-INF — Customer Support Specialist and Customer Service Officer roles depend on ongoing customer communication and relationship management)
+✅ Proficiency in both written and spoken English and Thai.: (MET-EVID — Thai fluency and English professional working proficiency explicitly stated)
+
+[AUDIT-2026-009-0002]
+```
+
+##### RUN C R2 F10_figures_only `intake_report.json`
+```
+{
+  "source": "F10_figures_only.docx",
+  "extractor": "python-docx",
+  "notes": [],
+  "pages": 1,
+  "lines": 12,
+  "status": "ok",
+  "normalization": {
+    "invisible_removed": {},
+    "soft_wraps_rejoined": 0
+  },
+  "checks": [
+    {
+      "name": "V-X1",
+      "passed": true,
+      "detail": "text extracted",
+      "evidence": {
+        "per_page_chars": [
+          480
+        ]
+      }
+    },
+    {
+      "name": "V-X2",
+      "passed": true,
+      "detail": "clean",
+      "evidence": {
+        "replacement_lines": [],
+        "mojibake": []
+      }
+    },
+    {
+      "name": "V-X3",
+      "passed": null,
+      "detail": "NOT RUN \u2014 pdftotext unavailable (recorded, not a pass)",
+      "evidence": {}
+    },
+    {
+      "name": "V-X4",
+      "passed": true,
+      "detail": "normalized text preserves every visible character",
+      "evidence": {
+        "skeleton_equal": true,
+        "compared_in": "NFC"
+      }
+    }
+  ]
+}
+```
+
+##### RUN C R2 F10_figures_only `numbered.txt`
+```
+L1: Arisa Boonmee
+L2: Phuket, Thailand · arisa.b@example.com
+L3: EDUCATION
+L4: Bachelor of Business Administration (Marketing), 2016–2020
+L5: EXPERIENCE
+L6: Customer Support Specialist, Nara Digital Services — Feb 2021 – Aug 2026
+L7: Raised customer satisfaction score from 71% to 88% over 2023–2025
+L8: Reduced average first-response time from 6 hours to 40 minutes
+L9: Handled 1,200+ accounts across two regional teams
+L10: Customer Service Officer, Phuket Marine Insurance Brokers — Jan 2019 – Jan 2021
+L11: LANGUAGES
+L12: Thai – native fluency; English – professional working proficiency (IELTS 7.0, 2021)
+```
+
+##### RUN C R2 F10_figures_only `e1.pass1.txt`
+```
+[NULL FILTRATION — R2]
+RESUME: R2
+NULL LINES: none
+[FILTRATION-R2]
+Second pass?
+```
+
+##### RUN C R2 F10_figures_only `e1.pass2.txt`
+```
+Second-pass integrity verified. Existing NULL list stands unchanged.
+```
+
+##### RUN C R2 F10_figures_only `null_list.txt`
+```
+[NULL FILTRATION — R2]
+RESUME: R2
+NULL LINES: none
+[FILTRATION-R2]
+Second pass?
+```
+
+##### RUN C R2 F10_figures_only `e2.pass1.txt`
+```
+Customer Success Associate – Requirements Extracted (parseable only)
+
+- MANDATORY — Bachelor’s degree in business, marketing, or a related field.
+- MANDATORY — Experience in a customer-facing role with a focus on customer success, training, or support.
+- MANDATORY — Strong understanding of customer success principles and practices, with the ability to translate customer needs into actionable strategies.
+- MANDATORY — Excellent problem-solving and analytical skills, with a data-driven approach to designing and delivering customer interventions.
+- MANDATORY — Exceptional communication and interpersonal skills, with the ability to engage and educate customers effectively.
+- MANDATORY — Proficiency in both written and spoken English and Thai.
+
+All other listed "requirements" are non-parseable in this reality and exert no effect.
+
+R2 Arisa Boonmee - Advance – Verify
+
+✅ Bachelor’s degree in business, marketing, or a related field.: (MET-EVID — Bachelor of Business Administration (Marketing), 2016–2020)
+✅ Experience in a customer-facing role with a focus on customer success, training, or support.: (MET-EVID — Customer Support Specialist 2021–2026 and Customer Service Officer 2019–2021, handling 1,200+ accounts and front-line customer interactions)
+⚖️ Raised customer satisfaction and managed large account volume → Strong understanding of customer success principles and practices, with the ability to translate customer needs into actionable strategies.: (equivalence — Improved CSAT from 71% to 88% and managed 1,200+ accounts, demonstrating application of customer success practices and turning customer needs into concrete improvements)
+⚖️ Quantified improvements in response time and satisfaction → Excellent problem-solving and analytical skills, with a data-driven approach to designing and delivering customer interventions.: (equivalence — Reduced first-response time from 6 hours to 40 minutes and significantly increased CSAT, indicating data-driven analysis and problem-solving to design effective interventions)
+✅ Exceptional communication and interpersonal skills, with the ability to engage and educate customers effectively.: (MET-INF — Multi-year customer-facing roles in support and service, acting as primary contact for 1,200+ accounts)
+⚠️ REQ-LANG Proficiency in both written and spoken English and Thai.: (verification required — Thai fluency and English professional working proficiency stated; interview should confirm level against role needs)
+
+[AUDIT-2026-002-0001]
+```
+
+##### RUN C R2 F10_figures_only `e2.pass2.txt`
+```
+Customer Success Associate – Requirements Extracted (parseable only)
+
+- MANDATORY — Bachelor’s degree in business, marketing, or a related field.
+- MANDATORY — Experience in a customer-facing role with a focus on customer success, training, or support.
+- MANDATORY — Strong understanding of customer success principles and practices, with the ability to translate customer needs into actionable strategies.
+- MANDATORY — Excellent problem-solving and analytical skills, with a data-driven approach to designing and delivering customer interventions.
+- MANDATORY — Exceptional communication and interpersonal skills, with the ability to engage and educate customers effectively.
+- MANDATORY — Proficiency in both written and spoken English and Thai.
+
+All other listed "requirements" are non-parseable in this reality and exert no effect.
+
+R2 Arisa Boonmee - Advance
+
+✅ Bachelor’s degree in business, marketing, or a related field.: (MET-EVID — Bachelor of Business Administration (Marketing), 2016–2020)
+✅ Experience in a customer-facing role with a focus on customer success, training, or support.: (MET-EVID — Customer Support Specialist 2021–2026 and Customer Service Officer 2019–2021 in front-line customer support and service roles)
+✅ Strong understanding of customer success principles and practices, with the ability to translate customer needs into actionable strategies.: (MET-EVID — Raised customer satisfaction score from 71% to 88% over 2023–2025 while managing 1,200+ accounts, demonstrating use of customer insights to drive improvements)
+✅ Excellent problem-solving and analytical skills, with a data-driven approach to designing and delivering customer interventions.: (MET-EVID — Reduced average first-response time from 6 hours to 40 minutes and significantly increased CSAT, indicating data analysis and targeted process changes)
+✅ Exceptional communication and interpersonal skills, with the ability to engage and educate customers effectively.: (MET-INF — Multi-year customer-facing support and service roles handling 1,200+ accounts)
+✅ Proficiency in both written and spoken English and Thai.: (MET-EVID — Thai fluency and English professional working proficiency stated)
+
+[AUDIT-2026-002-0002]
+```
+
+##### RUN C R2 F10_figures_only `evaluation.txt`
+```
+Customer Success Associate – Requirements Extracted (parseable only)
+
+- MANDATORY — Bachelor’s degree in business, marketing, or a related field.
+- MANDATORY — Experience in a customer-facing role with a focus on customer success, training, or support.
+- MANDATORY — Strong understanding of customer success principles and practices, with the ability to translate customer needs into actionable strategies.
+- MANDATORY — Excellent problem-solving and analytical skills, with a data-driven approach to designing and delivering customer interventions.
+- MANDATORY — Exceptional communication and interpersonal skills, with the ability to engage and educate customers effectively.
+- MANDATORY — Proficiency in both written and spoken English and Thai.
+
+All other listed "requirements" are non-parseable in this reality and exert no effect.
+
+R2 Arisa Boonmee - Advance
+
+✅ Bachelor’s degree in business, marketing, or a related field.: (MET-EVID — Bachelor of Business Administration (Marketing), 2016–2020)
+✅ Experience in a customer-facing role with a focus on customer success, training, or support.: (MET-EVID — Customer Support Specialist 2021–2026 and Customer Service Officer 2019–2021 in front-line customer support and service roles)
+✅ Strong understanding of customer success principles and practices, with the ability to translate customer needs into actionable strategies.: (MET-EVID — Raised customer satisfaction score from 71% to 88% over 2023–2025 while managing 1,200+ accounts, demonstrating use of customer insights to drive improvements)
+✅ Excellent problem-solving and analytical skills, with a data-driven approach to designing and delivering customer interventions.: (MET-EVID — Reduced average first-response time from 6 hours to 40 minutes and significantly increased CSAT, indicating data analysis and targeted process changes)
+✅ Exceptional communication and interpersonal skills, with the ability to engage and educate customers effectively.: (MET-INF — Multi-year customer-facing support and service roles handling 1,200+ accounts)
+✅ Proficiency in both written and spoken English and Thai.: (MET-EVID — Thai fluency and English professional working proficiency stated)
+
+[AUDIT-2026-002-0002]
+```
+
+#### Appendix D — Run PROBE-FBAT-D, artifacts
+
+##### RUN D `run.json`
+```
+{
+  "run_id": "20260906-055032",
+  "mode": "full",
+  "boundary_sha256": "892a8cb75067381ecfa3708e629259e72f569b3d9ff17818d725d185c57a6111",
+  "models": {
+    "e1": "deepseek-v4-flash",
+    "e2": "gpt-5.1",
+    "e2_pass2": "gpt-5.1",
+    "extraction": "gpt-5.1"
+  },
+  "reasoning_effort": {
+    "e2": "none",
+    "e2_pass2": "high",
+    "extraction": "high"
+  },
+  "jd": "fixtures/happily-csa-jd.txt",
+  "resumes": [
+    "fixtures/f-battery/F9_thin.docx",
+    "fixtures/f-battery/F10_figures_only.docx"
+  ]
+}
+```
+
+##### RUN D `requirement_set.txt`
+```
+Customer Success Associate – Requirements Extracted (parseable only)
+
+- MANDATORY — Bachelor’s degree in business, marketing, or a related field.
+- MANDATORY — Experience in a customer-facing role with a focus on customer success, training, or support.
+- MANDATORY — Strong understanding of customer success principles and practices, with the ability to translate customer needs into actionable strategies.
+- MANDATORY — Excellent problem-solving and analytical skills, with a data-driven approach to designing and delivering customer interventions.
+- MANDATORY — Exceptional communication and interpersonal skills, with the ability to engage and educate customers effectively.
+- MANDATORY — Proficiency in both written and spoken English and Thai.
+
+All other listed "requirements" are non-parseable in this reality and exert no effect.
+```
+
+##### RUN D R1 F9_thin `intake_report.json`
+```
+{
+  "source": "F9_thin.docx",
+  "extractor": "python-docx",
+  "notes": [],
+  "pages": 1,
+  "lines": 9,
+  "status": "ok",
+  "normalization": {
+    "invisible_removed": {},
+    "soft_wraps_rejoined": 0
+  },
+  "checks": [
+    {
+      "name": "V-X1",
+      "passed": true,
+      "detail": "text extracted",
+      "evidence": {
+        "per_page_chars": [
+          328
+        ]
+      }
+    },
+    {
+      "name": "V-X2",
+      "passed": true,
+      "detail": "clean",
+      "evidence": {
+        "replacement_lines": [],
+        "mojibake": []
+      }
+    },
+    {
+      "name": "V-X3",
+      "passed": null,
+      "detail": "NOT RUN \u2014 pdftotext unavailable (recorded, not a pass)",
+      "evidence": {}
+    },
+    {
+      "name": "V-X4",
+      "passed": true,
+      "detail": "normalized text preserves every visible character",
+      "evidence": {
+        "skeleton_equal": true,
+        "compared_in": "NFC"
+      }
+    }
+  ]
+}
+```
+
+##### RUN D R1 F9_thin `numbered.txt`
+```
+L1: Arisa Boonmee
+L2: Phuket, Thailand · arisa.b@example.com
+L3: EDUCATION
+L4: Bachelor of Business Administration (Marketing), 2016–2020
+L5: EXPERIENCE
+L6: Customer Support Specialist, Nara Digital Services — Feb 2021 – Aug 2026
+L7: Customer Service Officer, Phuket Marine Insurance Brokers — Jan 2019 – Jan 2021
+L8: LANGUAGES
+L9: Thai – native fluency; English – professional working proficiency (IELTS 7.0, 2021)
+```
+
+##### RUN D R1 F9_thin `e1.pass1.txt`
+```
+[NULL FILTRATION — R1]
+RESUME: R1
+NULL LINES: none
+[FILTRATION-R1]
+Second pass?
+```
+
+##### RUN D R1 F9_thin `e1.pass2.txt`
+```
+Second-pass integrity verified. Existing NULL list stands unchanged.
+```
+
+##### RUN D R1 F9_thin `null_list.txt`
+```
+[NULL FILTRATION — R1]
+RESUME: R1
+NULL LINES: none
+[FILTRATION-R1]
+Second pass?
+```
+
+##### RUN D R1 F9_thin `e2.pass1.txt`
+```
+Customer Success Associate – Requirements Extracted (parseable only)
+
+- MANDATORY — Bachelor’s degree in business, marketing, or a related field.
+- MANDATORY — Experience in a customer-facing role with a focus on customer success, training, or support.
+- MANDATORY — Strong understanding of customer success principles and practices, with the ability to translate customer needs into actionable strategies.
+- MANDATORY — Excellent problem-solving and analytical skills, with a data-driven approach to designing and delivering customer interventions.
+- MANDATORY — Exceptional communication and interpersonal skills, with the ability to engage and educate customers effectively.
+- MANDATORY — Proficiency in both written and spoken English and Thai.
+
+All other listed "requirements" are non-parseable in this reality and exert no effect.
+
+R1 Arisa Boonmee - Advance – Verify
+
+✅ Bachelor’s degree in business, marketing, or a related field.: (MET-EVID — Bachelor of Business Administration (Marketing), 2016–2020)
+✅ Experience in a customer-facing role with a focus on customer success, training, or support.: (MET-INF — Customer Support Specialist and Customer Service Officer roles are customer-facing with support focus)
+⚖️ Strong understanding of customer success principles and practices, with the ability to translate customer needs into actionable strategies.: (equivalence — Multiple years in customer support and service roles in business settings reasonably demonstrate applied customer success understanding and ability to act on customer needs)
+⚖️ Excellent problem-solving and analytical skills, with a data-driven approach to designing and delivering customer interventions.: (equivalence — Sustained experience in structured customer support roles implies regular problem-solving and use of customer information to resolve issues and improve service)
+✅ Exceptional communication and interpersonal skills, with the ability to engage and educate customers effectively.: (MET-INF — Customer Support Specialist and Customer Service Officer roles require ongoing customer communication and relationship management)
+⚠️ REQ-LANG Proficiency in both written and spoken English and Thai.: (verification required — Thai fluency and English professional working proficiency stated; interview should confirm level against role needs)
+
+[AUDIT-2026-001-0001]
+```
+
+##### RUN D R1 F9_thin `e2.pass2.txt`
+```
+Customer Success Associate – Requirements Extracted (parseable only)
+
+- MANDATORY — Bachelor’s degree in business, marketing, or a related field.
+- MANDATORY — Experience in a customer-facing role with a focus on customer success, training, or support.
+- MANDATORY — Strong understanding of customer success principles and practices, with the ability to translate customer needs into actionable strategies.
+- MANDATORY — Excellent problem-solving and analytical skills, with a data-driven approach to designing and delivering customer interventions.
+- MANDATORY — Exceptional communication and interpersonal skills, with the ability to engage and educate customers effectively.
+- MANDATORY — Proficiency in both written and spoken English and Thai.
+
+All other listed "requirements" are non-parseable in this reality and exert no effect.
+
+R1 Arisa Boonmee - Advance
+
+✅ Bachelor’s degree in business, marketing, or a related field.: (MET-EVID — Bachelor of Business Administration in Marketing completed 2016–2020)
+✅ Experience in a customer-facing role with a focus on customer success, training, or support.: (MET-EVID — Customer Support Specialist and Customer Service Officer roles providing ongoing customer-facing support)
+✅ Strong understanding of customer success principles and practices, with the ability to translate customer needs into actionable strategies.: (MET-INF — Several years in customer support and service roles addressing customer needs and helping improve their outcomes)
+✅ Excellent problem-solving and analytical skills, with a data-driven approach to designing and delivering customer interventions.: (MET-INF — Structured customer support work involves diagnosing issues and using customer information to resolve problems and improve service)
+✅ Exceptional communication and interpersonal skills, with the ability to engage and educate customers effectively.: (MET-INF — Customer-facing support and service roles require clear communication and relationship-building with customers)
+✅ Proficiency in both written and spoken English and Thai.: (MET-EVID — Record states Thai fluency and English professional working proficiency)
+
+[AUDIT-2026-001-0002]
+```
+
+##### RUN D R1 F9_thin `evaluation.txt`
+```
+Customer Success Associate – Requirements Extracted (parseable only)
+
+- MANDATORY — Bachelor’s degree in business, marketing, or a related field.
+- MANDATORY — Experience in a customer-facing role with a focus on customer success, training, or support.
+- MANDATORY — Strong understanding of customer success principles and practices, with the ability to translate customer needs into actionable strategies.
+- MANDATORY — Excellent problem-solving and analytical skills, with a data-driven approach to designing and delivering customer interventions.
+- MANDATORY — Exceptional communication and interpersonal skills, with the ability to engage and educate customers effectively.
+- MANDATORY — Proficiency in both written and spoken English and Thai.
+
+All other listed "requirements" are non-parseable in this reality and exert no effect.
+
+R1 Arisa Boonmee - Advance
+
+✅ Bachelor’s degree in business, marketing, or a related field.: (MET-EVID — Bachelor of Business Administration in Marketing completed 2016–2020)
+✅ Experience in a customer-facing role with a focus on customer success, training, or support.: (MET-EVID — Customer Support Specialist and Customer Service Officer roles providing ongoing customer-facing support)
+✅ Strong understanding of customer success principles and practices, with the ability to translate customer needs into actionable strategies.: (MET-INF — Several years in customer support and service roles addressing customer needs and helping improve their outcomes)
+✅ Excellent problem-solving and analytical skills, with a data-driven approach to designing and delivering customer interventions.: (MET-INF — Structured customer support work involves diagnosing issues and using customer information to resolve problems and improve service)
+✅ Exceptional communication and interpersonal skills, with the ability to engage and educate customers effectively.: (MET-INF — Customer-facing support and service roles require clear communication and relationship-building with customers)
+✅ Proficiency in both written and spoken English and Thai.: (MET-EVID — Record states Thai fluency and English professional working proficiency)
+
+[AUDIT-2026-001-0002]
+```
+
+##### RUN D R2 F10_figures_only `intake_report.json`
+```
+{
+  "source": "F10_figures_only.docx",
+  "extractor": "python-docx",
+  "notes": [],
+  "pages": 1,
+  "lines": 12,
+  "status": "ok",
+  "normalization": {
+    "invisible_removed": {},
+    "soft_wraps_rejoined": 0
+  },
+  "checks": [
+    {
+      "name": "V-X1",
+      "passed": true,
+      "detail": "text extracted",
+      "evidence": {
+        "per_page_chars": [
+          480
+        ]
+      }
+    },
+    {
+      "name": "V-X2",
+      "passed": true,
+      "detail": "clean",
+      "evidence": {
+        "replacement_lines": [],
+        "mojibake": []
+      }
+    },
+    {
+      "name": "V-X3",
+      "passed": null,
+      "detail": "NOT RUN \u2014 pdftotext unavailable (recorded, not a pass)",
+      "evidence": {}
+    },
+    {
+      "name": "V-X4",
+      "passed": true,
+      "detail": "normalized text preserves every visible character",
+      "evidence": {
+        "skeleton_equal": true,
+        "compared_in": "NFC"
+      }
+    }
+  ]
+}
+```
+
+##### RUN D R2 F10_figures_only `numbered.txt`
+```
+L1: Arisa Boonmee
+L2: Phuket, Thailand · arisa.b@example.com
+L3: EDUCATION
+L4: Bachelor of Business Administration (Marketing), 2016–2020
+L5: EXPERIENCE
+L6: Customer Support Specialist, Nara Digital Services — Feb 2021 – Aug 2026
+L7: Raised customer satisfaction score from 71% to 88% over 2023–2025
+L8: Reduced average first-response time from 6 hours to 40 minutes
+L9: Handled 1,200+ accounts across two regional teams
+L10: Customer Service Officer, Phuket Marine Insurance Brokers — Jan 2019 – Jan 2021
+L11: LANGUAGES
+L12: Thai – native fluency; English – professional working proficiency (IELTS 7.0, 2021)
+```
+
+##### RUN D R2 F10_figures_only `e1.pass1.txt`
+```
+[NULL FILTRATION — R2]  
+RESUME: R2  
+NULL LINES: none  
+[FILTRATION-R2]  
+Second pass?
+```
+
+##### RUN D R2 F10_figures_only `e1.pass2.txt`
+```
+Second-pass integrity verified. Existing NULL list stands unchanged.
+```
+
+##### RUN D R2 F10_figures_only `null_list.txt`
+```
+[NULL FILTRATION — R2]  
+RESUME: R2  
+NULL LINES: none  
+[FILTRATION-R2]  
+Second pass?
+```
+
+##### RUN D R2 F10_figures_only `e2.pass1.txt`
+```
+Customer Success Associate – Requirements Extracted (parseable only)
+
+- MANDATORY — Bachelor’s degree in business, marketing, or a related field.
+- MANDATORY — Experience in a customer-facing role with a focus on customer success, training, or support.
+- MANDATORY — Strong understanding of customer success principles and practices, with the ability to translate customer needs into actionable strategies.
+- MANDATORY — Excellent problem-solving and analytical skills, with a data-driven approach to designing and delivering customer interventions.
+- MANDATORY — Exceptional communication and interpersonal skills, with the ability to engage and educate customers effectively.
+- MANDATORY — Proficiency in both written and spoken English and Thai.
+
+All other listed "requirements" are non-parseable in this reality and exert no effect.
+
+R2 Arisa Boonmee - Advance – Verify
+
+✅ Bachelor’s degree in business, marketing, or a related field.: (MET-EVID — Bachelor of Business Administration (Marketing), 2016–2020)
+✅ Experience in a customer-facing role with a focus on customer success, training, or support.: (MET-INF — Customer Support Specialist and Customer Service Officer roles handling 1,200+ accounts and customer issues)
+✅ Strong understanding of customer success principles and practices, with the ability to translate customer needs into actionable strategies.: (MET-INF — Raised customer satisfaction from 71% to 88% and managed large account base, indicating application of customer success practices)
+✅ Excellent problem-solving and analytical skills, with a data-driven approach to designing and delivering customer interventions.: (MET-EVID — Improved satisfaction scores and reduced first-response time from 6 hours to 40 minutes using measurable performance data)
+✅ Exceptional communication and interpersonal skills, with the ability to engage and educate customers effectively.: (MET-INF — Multi-year customer-facing roles in support and service, acting as primary contact for many accounts)
+⚠️ REQ-LANG Proficiency in both written and spoken English and Thai.: (verification required — Thai and English abilities stated; interview should confirm current proficiency levels in both languages)
+
+[AUDIT-2026-002-0001]
+```
+
+##### RUN D R2 F10_figures_only `e2.pass2.txt`
+```
+Customer Success Associate – Requirements Extracted (parseable only)
+
+- MANDATORY — Bachelor’s degree in business, marketing, or a related field.
+- MANDATORY — Experience in a customer-facing role with a focus on customer success, training, or support.
+- MANDATORY — Strong understanding of customer success principles and practices, with the ability to translate customer needs into actionable strategies.
+- MANDATORY — Excellent problem-solving and analytical skills, with a data-driven approach to designing and delivering customer interventions.
+- MANDATORY — Exceptional communication and interpersonal skills, with the ability to engage and educate customers effectively.
+- MANDATORY — Proficiency in both written and spoken English and Thai.
+
+All other listed "requirements" are non-parseable in this reality and exert no effect.
+
+R2 Arisa Boonmee - Advance
+
+✅ Bachelor’s degree in business, marketing, or a related field.: (MET-EVID — Bachelor of Business Administration in Marketing completed)
+✅ Experience in a customer-facing role with a focus on customer success, training, or support.: (MET-INF — Customer Support Specialist and Customer Service Officer roles handling customer issues and accounts)
+✅ Strong understanding of customer success principles and practices, with the ability to translate customer needs into actionable strategies.: (MET-INF — Raised customer satisfaction score from 71% to 88% while managing a large account base, indicating effective customer success strategies)
+✅ Excellent problem-solving and analytical skills, with a data-driven approach to designing and delivering customer interventions.: (MET-EVID — Reduced average first-response time from 6 hours to 40 minutes and improved satisfaction scores using measurable performance metrics)
+✅ Exceptional communication and interpersonal skills, with the ability to engage and educate customers effectively.: (MET-INF — Multi-year customer-facing support and service roles, serving as primary contact for 1,200+ accounts across teams)
+✅ Proficiency in both written and spoken English and Thai.: (MET-EVID — Thai fluency and English professional working proficiency stated)
+
+[AUDIT-2026-002-0002]
+```
+
+##### RUN D R2 F10_figures_only `evaluation.txt`
+```
+Customer Success Associate – Requirements Extracted (parseable only)
+
+- MANDATORY — Bachelor’s degree in business, marketing, or a related field.
+- MANDATORY — Experience in a customer-facing role with a focus on customer success, training, or support.
+- MANDATORY — Strong understanding of customer success principles and practices, with the ability to translate customer needs into actionable strategies.
+- MANDATORY — Excellent problem-solving and analytical skills, with a data-driven approach to designing and delivering customer interventions.
+- MANDATORY — Exceptional communication and interpersonal skills, with the ability to engage and educate customers effectively.
+- MANDATORY — Proficiency in both written and spoken English and Thai.
+
+All other listed "requirements" are non-parseable in this reality and exert no effect.
+
+R2 Arisa Boonmee - Advance
+
+✅ Bachelor’s degree in business, marketing, or a related field.: (MET-EVID — Bachelor of Business Administration in Marketing completed)
+✅ Experience in a customer-facing role with a focus on customer success, training, or support.: (MET-INF — Customer Support Specialist and Customer Service Officer roles handling customer issues and accounts)
+✅ Strong understanding of customer success principles and practices, with the ability to translate customer needs into actionable strategies.: (MET-INF — Raised customer satisfaction score from 71% to 88% while managing a large account base, indicating effective customer success strategies)
+✅ Excellent problem-solving and analytical skills, with a data-driven approach to designing and delivering customer interventions.: (MET-EVID — Reduced average first-response time from 6 hours to 40 minutes and improved satisfaction scores using measurable performance metrics)
+✅ Exceptional communication and interpersonal skills, with the ability to engage and educate customers effectively.: (MET-INF — Multi-year customer-facing support and service roles, serving as primary contact for 1,200+ accounts across teams)
+✅ Proficiency in both written and spoken English and Thai.: (MET-EVID — Thai fluency and English professional working proficiency stated)
+
+[AUDIT-2026-002-0002]
+```
+
 

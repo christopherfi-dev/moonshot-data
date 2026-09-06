@@ -1,0 +1,170 @@
+[
+  {
+    "attempt": 1,
+    "t": 1788673778.3224382,
+    "model": "deepseek-v4-flash",
+    "finish_reason": "stop",
+    "usage": {
+      "prompt_tokens": 7269,
+      "completion_tokens": 309,
+      "total_tokens": 7578,
+      "prompt_tokens_details": {
+        "cached_tokens": 6144
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 277
+      },
+      "prompt_cache_hit_tokens": 6144,
+      "prompt_cache_miss_tokens": 1125
+    },
+    "ok": true
+  },
+  {
+    "attempt": 1,
+    "t": 1788673781.7718408,
+    "model": "deepseek-v4-flash",
+    "finish_reason": "stop",
+    "usage": {
+      "prompt_tokens": 7315,
+      "completion_tokens": 352,
+      "total_tokens": 7667,
+      "prompt_tokens_details": {
+        "cached_tokens": 7168
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 340
+      },
+      "prompt_cache_hit_tokens": 7168,
+      "prompt_cache_miss_tokens": 147
+    },
+    "ok": true
+  },
+  {
+    "attempt": 1,
+    "t": 1788673778.3265092,
+    "model": "deepseek-v4-flash",
+    "finish_reason": "stop",
+    "usage": {
+      "prompt_tokens": 7326,
+      "completion_tokens": 914,
+      "total_tokens": 8240,
+      "prompt_tokens_details": {
+        "cached_tokens": 6144
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 882
+      },
+      "prompt_cache_hit_tokens": 6144,
+      "prompt_cache_miss_tokens": 1182
+    },
+    "ok": true
+  },
+  {
+    "attempt": 1,
+    "t": 1788673786.0488253,
+    "model": "deepseek-v4-flash",
+    "finish_reason": "stop",
+    "usage": {
+      "prompt_tokens": 7372,
+      "completion_tokens": 444,
+      "total_tokens": 7816,
+      "prompt_tokens_details": {
+        "cached_tokens": 7296
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 432
+      },
+      "prompt_cache_hit_tokens": 7296,
+      "prompt_cache_miss_tokens": 76
+    },
+    "ok": true
+  },
+  {
+    "attempt": 1,
+    "t": 1788673785.6997883,
+    "model": "gpt-5.1",
+    "finish_reason": "stop",
+    "usage": {
+      "prompt_tokens": 6490,
+      "completion_tokens": 425,
+      "total_tokens": 6915,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "audio_tokens": 0,
+        "accepted_prediction_tokens": 0,
+        "rejected_prediction_tokens": 0
+      }
+    },
+    "ok": true
+  },
+  {
+    "attempt": 1,
+    "t": 1788673790.4655137,
+    "model": "gpt-5.1",
+    "finish_reason": "stop",
+    "usage": {
+      "prompt_tokens": 6546,
+      "completion_tokens": 499,
+      "total_tokens": 7045,
+      "prompt_tokens_details": {
+        "cached_tokens": 6016,
+        "audio_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "audio_tokens": 0,
+        "accepted_prediction_tokens": 0,
+        "rejected_prediction_tokens": 0
+      }
+    },
+    "ok": true
+  },
+  {
+    "attempt": 1,
+    "t": 1788673791.0954556,
+    "model": "gpt-5.1",
+    "finish_reason": "stop",
+    "usage": {
+      "prompt_tokens": 6919,
+      "completion_tokens": 3071,
+      "total_tokens": 9990,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 2656,
+        "audio_tokens": 0,
+        "accepted_prediction_tokens": 0,
+        "rejected_prediction_tokens": 0
+      }
+    },
+    "ok": true
+  },
+  {
+    "attempt": 1,
+    "t": 1788673794.4072235,
+    "model": "gpt-5.1",
+    "finish_reason": "stop",
+    "usage": {
+      "prompt_tokens": 7049,
+      "completion_tokens": 4306,
+      "total_tokens": 11355,
+      "prompt_tokens_details": {
+        "cached_tokens": 6016,
+        "audio_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 3853,
+        "audio_tokens": 0,
+        "accepted_prediction_tokens": 0,
+        "rejected_prediction_tokens": 0
+      }
+    },
+    "ok": true
+  }
+]

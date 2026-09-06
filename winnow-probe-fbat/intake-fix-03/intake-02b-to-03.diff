@@ -1,0 +1,92 @@
+--- /home/claude/handoff/pipeline-fixes/intake.py	2026-09-05 15:47:19.000000000 +0000
++++ intake.py	2026-09-06 05:34:07.937524336 +0000
+@@ -3,9 +3,14 @@
+ 
+ Ports the DOCTRINE, not the code: dual extraction, four deterministic
+ validators (V-X1..V-X4), the text normalizer, and the operator gate.
+-Thresholds are carried over verbatim from the year-validated originals:
+-  V-X1 CHARS_PER_PAGE_FLOOR = 500
++Thresholds carried over from the year-validated originals:
+   V-X3 ORDER_DIVERGENCE_THRESHOLD = 0.08 (token-sequence, 5000-token cap)
++V-X1 (INTAKE-FIX-03, 2026-09-06): no character floor. V-X1 now tests the
++failure it was written for — a PDF page with image objects and no text
++layer. Short pages are short, not failed. Non-PDF extractors (python-docx,
++txt) have no page or text-layer failure mode; V-X1 checks only that some
++text was extracted. A document from which no text at all was extracted
++reports status "unreadable" and is never sent to the engines.
+ This layer judges EXTRACTIONS, never candidates. It blocks nothing by
+ itself: it produces a status (ok / degraded / blocked-for-operator) and
+ an evidence report; the operator gate is a human decision.
+@@ -26,7 +31,6 @@
+ from difflib import SequenceMatcher
+ from pathlib import Path
+ 
+-CHARS_PER_PAGE_FLOOR = 500
+ ORDER_DIVERGENCE_THRESHOLD = 0.08
+ RIGHT_BAND_MIN_CHARS = 400
+ MAX_TOKENS = 5000
+@@ -227,16 +231,30 @@
+ 
+ 
+ # ---------------------------------------------------------------- validators
+-def vx1_page_coverage(pages):
++def vx1_page_coverage(pages, path: Path, extractor: str):
+     counts = [len(re.sub(r"\s", "", p)) for p in pages]
+-    thin = [i + 1 for i, c in enumerate(counts) if c < CHARS_PER_PAGE_FLOOR]
+-    passed = not thin
++    if path.suffix.lower() != ".pdf":
++        passed = any(counts)
++        return {"name": "V-X1", "passed": passed,
++                "detail": ("text extracted" if passed else
++                           f"{extractor} extracted no text"),
++                "evidence": {"per_page_chars": counts}}
++    # PDF: image-only means a page carrying image objects with no text layer.
++    images = []
++    try:
++        import fitz
++        with fitz.open(str(path)) as doc:
++            images = [len(pg.get_images()) for pg in doc]
++    except Exception as e:  # noqa: BLE001 — recorded, not fatal
++        images = []
++    image_only = [i + 1 for i, c in enumerate(counts)
++                  if c == 0 and i < len(images) and images[i] > 0]
++    passed = not image_only
+     return {"name": "V-X1", "passed": passed,
+-            "detail": ("all pages above floor" if passed else
+-                       f"page(s) {thin} below {CHARS_PER_PAGE_FLOOR} "
+-                       f"non-space chars/page — possible silent drop or "
+-                       f"image-only page; operator review"),
+-            "evidence": {"per_page_chars": counts, "floor": CHARS_PER_PAGE_FLOOR}}
++            "detail": ("no image-only pages" if passed else
++                       f"page(s) {image_only} carry image objects and no "
++                       f"text layer — image-only; OCR or operator review"),
++            "evidence": {"per_page_chars": counts, "per_page_images": images}}
+ 
+ 
+ def vx2_encoding(text):
+@@ -332,19 +350,22 @@
+     raw = "\n".join(pages)
+     normalized, norm_ev = normalize(raw)
+ 
+-    checks = [vx1_page_coverage(pages), vx2_encoding(normalized),
++    checks = [vx1_page_coverage(pages, path, extractor), vx2_encoding(normalized),
+               vx3_reading_order(pages, layout),
+               vx4_normalization_safety(raw, normalized)]
+ 
++    (outdir / "normalized.txt").write_text(normalized)
++    numbered, n = number_lines(normalized)
++
+     if checks[3]["passed"] is False:
+         status = "blocked"           # V-X4 outranks every other escalation
++    elif n == 0:
++        status = "unreadable"        # nothing extracted; nothing to evaluate
+     elif any(c["passed"] is False for c in checks):
+         status = "degraded-operator-review"
+     else:
+         status = "ok"
+ 
+-    (outdir / "normalized.txt").write_text(normalized)
+-    numbered, n = number_lines(normalized)
+     (outdir / "numbered.txt").write_text(numbered)
+     report = {"source": path.name, "extractor": extractor, "notes": notes,
+               "pages": len(pages), "lines": n, "status": status,

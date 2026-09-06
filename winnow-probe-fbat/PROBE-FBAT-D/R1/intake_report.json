@@ -1,0 +1,48 @@
+{
+  "source": "F9_thin.docx",
+  "extractor": "python-docx",
+  "notes": [],
+  "pages": 1,
+  "lines": 9,
+  "status": "ok",
+  "normalization": {
+    "invisible_removed": {},
+    "soft_wraps_rejoined": 0
+  },
+  "checks": [
+    {
+      "name": "V-X1",
+      "passed": true,
+      "detail": "text extracted",
+      "evidence": {
+        "per_page_chars": [
+          328
+        ]
+      }
+    },
+    {
+      "name": "V-X2",
+      "passed": true,
+      "detail": "clean",
+      "evidence": {
+        "replacement_lines": [],
+        "mojibake": []
+      }
+    },
+    {
+      "name": "V-X3",
+      "passed": null,
+      "detail": "NOT RUN \u2014 pdftotext unavailable (recorded, not a pass)",
+      "evidence": {}
+    },
+    {
+      "name": "V-X4",
+      "passed": true,
+      "detail": "normalized text preserves every visible character",
+      "evidence": {
+        "skeleton_equal": true,
+        "compared_in": "NFC"
+      }
+    }
+  ]
+}

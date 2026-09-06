@@ -1,0 +1,21 @@
+Customer Success Associate – Requirements Extracted (parseable only)
+
+- MANDATORY — Bachelor’s degree in business, marketing, or a related field.
+- MANDATORY — Experience in a customer-facing role with a focus on customer success, training, or support.
+- MANDATORY — Strong understanding of customer success principles and practices, with the ability to translate customer needs into actionable strategies.
+- MANDATORY — Excellent problem-solving and analytical skills, with a data-driven approach to designing and delivering customer interventions.
+- MANDATORY — Exceptional communication and interpersonal skills, with the ability to engage and educate customers effectively.
+- MANDATORY — Proficiency in both written and spoken English and Thai.
+
+All other listed "requirements" are non-parseable in this reality and exert no effect.
+
+R2 Arisa Boonmee - Advance
+
+✅ Bachelor’s degree in business, marketing, or a related field.: (MET-EVID — Bachelor of Business Administration in Marketing completed)
+✅ Experience in a customer-facing role with a focus on customer success, training, or support.: (MET-INF — Customer Support Specialist and Customer Service Officer roles handling customer issues and accounts)
+✅ Strong understanding of customer success principles and practices, with the ability to translate customer needs into actionable strategies.: (MET-INF — Raised customer satisfaction score from 71% to 88% while managing a large account base, indicating effective customer success strategies)
+✅ Excellent problem-solving and analytical skills, with a data-driven approach to designing and delivering customer interventions.: (MET-EVID — Reduced average first-response time from 6 hours to 40 minutes and improved satisfaction scores using measurable performance metrics)
+✅ Exceptional communication and interpersonal skills, with the ability to engage and educate customers effectively.: (MET-INF — Multi-year customer-facing support and service roles, serving as primary contact for 1,200+ accounts across teams)
+✅ Proficiency in both written and spoken English and Thai.: (MET-EVID — Thai fluency and English professional working proficiency stated)
+
+[AUDIT-2026-002-0002]

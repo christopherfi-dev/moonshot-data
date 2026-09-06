@@ -1,0 +1,21 @@
+{
+  "run_id": "20260906-055032",
+  "mode": "full",
+  "boundary_sha256": "892a8cb75067381ecfa3708e629259e72f569b3d9ff17818d725d185c57a6111",
+  "models": {
+    "e1": "deepseek-v4-flash",
+    "e2": "gpt-5.1",
+    "e2_pass2": "gpt-5.1",
+    "extraction": "gpt-5.1"
+  },
+  "reasoning_effort": {
+    "e2": "none",
+    "e2_pass2": "high",
+    "extraction": "high"
+  },
+  "jd": "fixtures/happily-csa-jd.txt",
+  "resumes": [
+    "fixtures/f-battery/F9_thin.docx",
+    "fixtures/f-battery/F10_figures_only.docx"
+  ]
+}
