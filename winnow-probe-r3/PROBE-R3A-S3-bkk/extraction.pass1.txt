@@ -1,0 +1,10 @@
+HR Operations & Recruitment Systems Manager – Requirements Extracted (parseable only)
+
+- MANDATORY — Bachelor's degree or equivalent professional experience in HR operations, recruitment operations, or workforce systems  
+- MANDATORY — 5+ years of experience in HR operations, recruitment operations, talent acquisition, people operations, or workforce planning  
+- MANDATORY — Experience using an ATS or HRIS such as Workday, Greenhouse, Lever, BambooHR, Manatal, Zoho Recruit, SmartRecruiters, SAP SuccessFactors, or similar  
+- MANDATORY — Ability to build reports, trackers, or dashboards using Excel, Google Sheets, Looker Studio, Power BI, Tableau, or similar tools  
+- MANDATORY — Experience improving recruitment workflows, onboarding, retention, scheduling, or employee data processes  
+- MANDATORY — Experience handling confidential employee or candidate information  
+- MANDATORY — Strong English communication skills for reports and leadership updates  
+- ESSENTIAL-FUNCTION — Able to work hybrid in Bangkok 3 days per week

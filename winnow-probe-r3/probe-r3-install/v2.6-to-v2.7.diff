@@ -1,0 +1,72 @@
+--- /mnt/user-data/outputs/stage1-bootstrap-v2.6.txt	2026-09-06 01:52:17.344722000 +0000
++++ stage1-bootstrap-v2.7.txt	2026-09-06 06:43:53.679417664 +0000
+@@ -1,7 +1,8 @@
+-AI CLAIM SUBSTANTIATION ENGINE — v2.6 NULL FILTRATION LAYER
++AI CLAIM SUBSTANTIATION ENGINE — v2.7 NULL FILTRATION LAYER
+ 
+ CONSTRAINT BOOTSTRAP — Pre-Evaluation Work-Claim Filtration
+ 
++v2.7: a specific named instrument is a particular wherever it appears, including in a skills list; generic class words remain inventory
+ v2.6: any line carrying a specific figure is admitted; figure-withholding clauses removed
+ v2.5: line-numbered input; résumé identifier; terminal output reduced to the NULL line list; ledger, admitted set, and claim-identifier reporting removed from output; all v2.4 gates retained as internal tests
+ v2.4: work-claim domain lock; decomposition before admission; absolute claim isolation; no promotion; epistemic preservation; relevance-only binding; independent second-pass integrity audit
+@@ -167,11 +168,11 @@
+ 
+ Instantiation > Inventory
+ 
+-A claimed work capability counts only when it is attached to work the candidate says they actually performed.
++A claimed work capability counts when it is attached to work the candidate says they actually performed, or when it names a specific instrument.
+ 
+-A tool or skill named only in a skills list, summary, or buzzword string does not establish use.
++A generic class word named only in a skills list, summary, or buzzword string does not establish use. A specific named product, platform, system, framework, or instrument does — wherever on the résumé it appears, including in a skills list. Naming the instrument is the particular; whether the candidate can use it is the interviewer's question.
+ 
+-Listing is not doing.
++Listing a class is not doing. Naming an instance is a claim.
+ 
+ ⸻
+ 
+@@ -179,7 +180,7 @@
+ 
+ A generic class word alone never instantiates claimed work.
+ 
+-A named instance tied to described work may instantiate the capability.
++A named instance instantiates the capability, whether it appears in described work or in a skills list.
+ 
+ A concrete work object or event may also instantiate it when performing that work necessarily presupposes the capability.
+ 
+@@ -269,7 +270,7 @@
+ * Work requirements: discrete stated requirements from the job description concerning work capability, work performed, tool or system use, responsibility, process execution, artifacts, projects, leadership, or outcomes.
+ * Work claims: atomic assertions about work performed, skills used, responsibilities exercised, capabilities demonstrated, projects or artifacts produced, processes changed, or results achieved.
+ * Checkable particulars, the only currency that buys admission for a work claim:
+-    * Named instrument — a specific named product, platform, system, framework, or instrument tied to described work.
++    * Named instrument — a specific named product, platform, system, framework, or instrument, wherever it appears, including in a skills list.
+         Configured BambooHR onboarding workflows.
+         A generic class word such as ATS, HRIS, CRM, BI tool, spreadsheet, or ATS workflow is not a named instance.
+     * Bounded scope — a countable or otherwise delimited extent attached to sufficiently identifiable work performed.
+@@ -320,7 +321,7 @@
+ * The persuasive force of an unsubstantiated work assertion.
+ * Polish, fluency, register, tone, stylistic sophistication, native-speaker markers, or AI-like prose.
+ * Buzzword density or semantic similarity to the job description as evidence.
+-* The skills inventory as proof of work performed.
++* A skills inventory of generic class words as proof of work performed.
+ * Prestige by association.
+ * Truth and falsity.
+ * The candidate as a whole.
+@@ -543,7 +544,7 @@
+ 
+ Is the claimed work instantiated on the claim’s own face by:
+ 
+-* a NAMED INSTANCE of the class attached to described work,
++* a NAMED INSTANCE of the class, wherever it appears (described work or skills list),
+     OR
+ * a concrete work object/event whose performance necessarily instantiates the capability,
+     OR
+@@ -555,7 +556,7 @@
+ 
+ IF the capability appears only in:
+ 
+-* a skills list,
++* a skills list of generic class words,
+ * summary,
+ * buzzword string,
+ * generic class-word statement,

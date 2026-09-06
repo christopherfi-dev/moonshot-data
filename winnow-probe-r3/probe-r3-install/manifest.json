@@ -1,0 +1,17 @@
+{
+  "assets": {
+    "stage1-bootstrap-v2.5.txt": "c8b213db9fad6bca64379784909dc8dbf948b7948590d2e0ae2243bf1415ec1b",
+    "stage3-bootstrap-v28.6.txt": "44de60a346fe8e3df97daa88adbbb53cb895890ed7922f63e13a7c8bdadcbdc2",
+    "stage3-bootstrap-v28.7.txt": "531a6f22ede9313c7e53884c1fbbb7e4f8b526880a44cb85336608dfecfbacf4",
+    "stage3-bootstrap-v28.8.txt": "1c60b4a974873154ddcd158cb65bd3f0a66d2095829140906dcbe588480964b6",
+    "stage3-bootstrap-v28.9.txt": "1962327a32cace258333ca60bea6f7f8e07b3064a0ece5596236104e158e3b15",
+    "stage3-bootstrap-v28.10.txt": "49623547bdfd420daa60b7bc9397767225020b5c758db8b21a8ede1c97ec882c",
+    "stage3-bootstrap-v28.12.txt": "aeadb4ce55d894075a5997a726035ea2a31d57115aaf47687374b466184283dd",
+    "stage3-bootstrap-v27.5.txt": "27d87ddd037e4bb9ef83740f031c3dc8468390782b59319d7d9548c113167b81",
+    "stage3-bootstrap-v27.6.txt": "c4b303113060f868a33a4b98c692b03e5194d57549a8489e4907f67d9527876d",
+    "stage1-bootstrap-v2.6.txt": "ded8db1d8da9b468240280b6b99882d8a3fa6465e656a87d60abb8de6d4f8f7a",
+    "stage3-bootstrap-v27.7.txt": "d2216aa4379a57369cb664d62e998e42475f0499ebbcd538e058c2d3268b0b7d",
+    "stage1-bootstrap-v2.7.txt": "eef89404917d1ed1f36259ed3162862af65c3a74c434107a887879f0c49373af"
+  },
+  "note": "ADD-only. 2026-09-06: v27.5, v27.6, stage1 v2.6 added by master thread 3 from hash-verified files; intake fix 02b and pipeline fix 04 applied. e1=v2.6, e2=v27.6. 2026-09-06 PROBE-R3: v27.7 and stage1 v2.7 ADDED from hash-verified files; e1=v2.7, e2=v27.7."
+}

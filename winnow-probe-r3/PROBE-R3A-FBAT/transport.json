@@ -1,0 +1,970 @@
+[
+  {
+    "attempt": 1,
+    "t": 1788678239.1057744,
+    "model": "gpt-5.1",
+    "finish_reason": "stop",
+    "usage": {
+      "prompt_tokens": 6004,
+      "completion_tokens": 1528,
+      "total_tokens": 7532,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 1361,
+        "audio_tokens": 0,
+        "accepted_prediction_tokens": 0,
+        "rejected_prediction_tokens": 0
+      }
+    },
+    "ok": true
+  },
+  {
+    "attempt": 1,
+    "t": 1788678254.4534411,
+    "model": "gpt-5.1",
+    "finish_reason": "stop",
+    "usage": {
+      "prompt_tokens": 6176,
+      "completion_tokens": 1996,
+      "total_tokens": 8172,
+      "prompt_tokens_details": {
+        "cached_tokens": 5888,
+        "audio_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 1829,
+        "audio_tokens": 0,
+        "accepted_prediction_tokens": 0,
+        "rejected_prediction_tokens": 0
+      }
+    },
+    "ok": true
+  },
+  {
+    "attempt": 1,
+    "t": 1788678269.678108,
+    "model": "deepseek-v4-flash",
+    "finish_reason": "stop",
+    "usage": {
+      "prompt_tokens": 7810,
+      "completion_tokens": 458,
+      "total_tokens": 8268,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 325
+      },
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 7810
+    },
+    "ok": true
+  },
+  {
+    "attempt": 1,
+    "t": 1788678269.6827226,
+    "model": "deepseek-v4-flash",
+    "finish_reason": "stop",
+    "usage": {
+      "prompt_tokens": 7581,
+      "completion_tokens": 999,
+      "total_tokens": 8580,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 967
+      },
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 7581
+    },
+    "ok": true
+  },
+  {
+    "attempt": 1,
+    "t": 1788678278.3205907,
+    "model": "deepseek-v4-flash",
+    "finish_reason": "stop",
+    "usage": {
+      "prompt_tokens": 7627,
+      "completion_tokens": 815,
+      "total_tokens": 8442,
+      "prompt_tokens_details": {
+        "cached_tokens": 7552
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 803
+      },
+      "prompt_cache_hit_tokens": 7552,
+      "prompt_cache_miss_tokens": 75
+    },
+    "ok": true
+  },
+  {
+    "attempt": 1,
+    "t": 1788678285.950072,
+    "model": "gpt-5.1",
+    "finish_reason": "stop",
+    "usage": {
+      "prompt_tokens": 6659,
+      "completion_tokens": 595,
+      "total_tokens": 7254,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "audio_tokens": 0,
+        "accepted_prediction_tokens": 0,
+        "rejected_prediction_tokens": 0
+      }
+    },
+    "ok": true
+  },
+  {
+    "attempt": 1,
+    "t": 1788678269.6884077,
+    "model": "deepseek-v4-flash",
+    "finish_reason": "stop",
+    "usage": {
+      "prompt_tokens": 7780,
+      "completion_tokens": 2740,
+      "total_tokens": 10520,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 2557
+      },
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 7780
+    },
+    "ok": true
+  },
+  {
+    "attempt": 1,
+    "t": 1788678269.672437,
+    "model": "deepseek-v4-flash",
+    "finish_reason": "stop",
+    "usage": {
+      "prompt_tokens": 7611,
+      "completion_tokens": 3717,
+      "total_tokens": 11328,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 3685
+      },
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 7611
+    },
+    "ok": true
+  },
+  {
+    "attempt": 1,
+    "t": 1788678302.4649026,
+    "model": "deepseek-v4-flash",
+    "finish_reason": "stop",
+    "usage": {
+      "prompt_tokens": 7657,
+      "completion_tokens": 1184,
+      "total_tokens": 8841,
+      "prompt_tokens_details": {
+        "cached_tokens": 7552
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 1172
+      },
+      "prompt_cache_hit_tokens": 7552,
+      "prompt_cache_miss_tokens": 105
+    },
+    "ok": true
+  },
+  {
+    "attempt": 1,
+    "t": 1788678313.0859668,
+    "model": "gpt-5.1",
+    "finish_reason": "stop",
+    "usage": {
+      "prompt_tokens": 6692,
+      "completion_tokens": 534,
+      "total_tokens": 7226,
+      "prompt_tokens_details": {
+        "cached_tokens": 6016,
+        "audio_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "audio_tokens": 0,
+        "accepted_prediction_tokens": 0,
+        "rejected_prediction_tokens": 0
+      }
+    },
+    "ok": true
+  },
+  {
+    "attempt": 1,
+    "t": 1788678291.1241863,
+    "model": "gpt-5.1",
+    "finish_reason": "stop",
+    "usage": {
+      "prompt_tokens": 7258,
+      "completion_tokens": 5825,
+      "total_tokens": 13083,
+      "prompt_tokens_details": {
+        "cached_tokens": 4992,
+        "audio_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 5250,
+        "audio_tokens": 0,
+        "accepted_prediction_tokens": 0,
+        "rejected_prediction_tokens": 0
+      }
+    },
+    "ok": true
+  },
+  {
+    "attempt": 1,
+    "t": 1788678319.0046072,
+    "model": "gpt-5.1",
+    "finish_reason": "stop",
+    "usage": {
+      "prompt_tokens": 7230,
+      "completion_tokens": 4002,
+      "total_tokens": 11232,
+      "prompt_tokens_details": {
+        "cached_tokens": 6016,
+        "audio_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 3461,
+        "audio_tokens": 0,
+        "accepted_prediction_tokens": 0,
+        "rejected_prediction_tokens": 0
+      }
+    },
+    "ok": true
+  },
+  {
+    "attempt": 1,
+    "t": 1788678274.8359613,
+    "model": "deepseek-v4-flash",
+    "finish_reason": "stop",
+    "usage": {
+      "prompt_tokens": 7957,
+      "completion_tokens": 10721,
+      "total_tokens": 18678,
+      "prompt_tokens_details": {
+        "cached_tokens": 1920
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 10709
+      },
+      "prompt_cache_hit_tokens": 1920,
+      "prompt_cache_miss_tokens": 6037
+    },
+    "ok": true
+  },
+  {
+    "attempt": 1,
+    "t": 1788678337.7653997,
+    "model": "deepseek-v4-flash",
+    "finish_reason": "stop",
+    "usage": {
+      "prompt_tokens": 7516,
+      "completion_tokens": 3782,
+      "total_tokens": 11298,
+      "prompt_tokens_details": {
+        "cached_tokens": 1408
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 3733
+      },
+      "prompt_cache_hit_tokens": 1408,
+      "prompt_cache_miss_tokens": 6108
+    },
+    "ok": true
+  },
+  {
+    "attempt": 1,
+    "t": 1788678367.7905576,
+    "model": "gpt-5.1",
+    "finish_reason": "stop",
+    "usage": {
+      "prompt_tokens": 6986,
+      "completion_tokens": 517,
+      "total_tokens": 7503,
+      "prompt_tokens_details": {
+        "cached_tokens": 6016,
+        "audio_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "audio_tokens": 0,
+        "accepted_prediction_tokens": 0,
+        "rejected_prediction_tokens": 0
+      }
+    },
+    "ok": true
+  },
+  {
+    "attempt": 1,
+    "t": 1788678370.6248834,
+    "model": "deepseek-v4-flash",
+    "finish_reason": "stop",
+    "usage": {
+      "prompt_tokens": 7579,
+      "completion_tokens": 2346,
+      "total_tokens": 9925,
+      "prompt_tokens_details": {
+        "cached_tokens": 7424
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 2334
+      },
+      "prompt_cache_hit_tokens": 7424,
+      "prompt_cache_miss_tokens": 155
+    },
+    "ok": true
+  },
+  {
+    "attempt": 1,
+    "t": 1788678391.7138362,
+    "model": "gpt-5.1",
+    "finish_reason": "stop",
+    "usage": {
+      "prompt_tokens": 6620,
+      "completion_tokens": 490,
+      "total_tokens": 7110,
+      "prompt_tokens_details": {
+        "cached_tokens": 6016,
+        "audio_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "audio_tokens": 0,
+        "accepted_prediction_tokens": 0,
+        "rejected_prediction_tokens": 0
+      }
+    },
+    "ok": true
+  },
+  {
+    "attempt": 1,
+    "t": 1788678353.9978044,
+    "model": "deepseek-v4-flash",
+    "finish_reason": "stop",
+    "usage": {
+      "prompt_tokens": 7696,
+      "completion_tokens": 6797,
+      "total_tokens": 14493,
+      "prompt_tokens_details": {
+        "cached_tokens": 7168
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 6644
+      },
+      "prompt_cache_hit_tokens": 7168,
+      "prompt_cache_miss_tokens": 528
+    },
+    "ok": true
+  },
+  {
+    "attempt": 1,
+    "t": 1788678374.502354,
+    "model": "gpt-5.1",
+    "finish_reason": "stop",
+    "usage": {
+      "prompt_tokens": 7507,
+      "completion_tokens": 4944,
+      "total_tokens": 12451,
+      "prompt_tokens_details": {
+        "cached_tokens": 6016,
+        "audio_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 4431,
+        "audio_tokens": 0,
+        "accepted_prediction_tokens": 0,
+        "rejected_prediction_tokens": 0
+      }
+    },
+    "ok": true
+  },
+  {
+    "attempt": 1,
+    "t": 1788678427.6309366,
+    "model": "deepseek-v4-flash",
+    "finish_reason": "stop",
+    "usage": {
+      "prompt_tokens": 7601,
+      "completion_tokens": 759,
+      "total_tokens": 8360,
+      "prompt_tokens_details": {
+        "cached_tokens": 7168
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 725
+      },
+      "prompt_cache_hit_tokens": 7168,
+      "prompt_cache_miss_tokens": 433
+    },
+    "ok": true
+  },
+  {
+    "attempt": 1,
+    "t": 1788678434.6775985,
+    "model": "deepseek-v4-flash",
+    "finish_reason": "stop",
+    "usage": {
+      "prompt_tokens": 7649,
+      "completion_tokens": 327,
+      "total_tokens": 7976,
+      "prompt_tokens_details": {
+        "cached_tokens": 7552
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 315
+      },
+      "prompt_cache_hit_tokens": 7552,
+      "prompt_cache_miss_tokens": 97
+    },
+    "ok": true
+  },
+  {
+    "attempt": 1,
+    "t": 1788678438.2799926,
+    "model": "gpt-5.1",
+    "finish_reason": "stop",
+    "usage": {
+      "prompt_tokens": 6684,
+      "completion_tokens": 496,
+      "total_tokens": 7180,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "audio_tokens": 0,
+        "accepted_prediction_tokens": 0,
+        "rejected_prediction_tokens": 0
+      }
+    },
+    "ok": true
+  },
+  {
+    "attempt": 1,
+    "t": 1788678396.767549,
+    "model": "gpt-5.1",
+    "finish_reason": "stop",
+    "usage": {
+      "prompt_tokens": 7114,
+      "completion_tokens": 11349,
+      "total_tokens": 18463,
+      "prompt_tokens_details": {
+        "cached_tokens": 6016,
+        "audio_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 10841,
+        "audio_tokens": 0,
+        "accepted_prediction_tokens": 0,
+        "rejected_prediction_tokens": 0
+      }
+    },
+    "ok": true
+  },
+  {
+    "attempt": 1,
+    "t": 1788678503.5443547,
+    "model": "deepseek-v4-flash",
+    "finish_reason": "stop",
+    "usage": {
+      "prompt_tokens": 7589,
+      "completion_tokens": 758,
+      "total_tokens": 8347,
+      "prompt_tokens_details": {
+        "cached_tokens": 7168
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 726
+      },
+      "prompt_cache_hit_tokens": 7168,
+      "prompt_cache_miss_tokens": 421
+    },
+    "ok": true
+  },
+  {
+    "attempt": 1,
+    "t": 1788678442.808247,
+    "model": "gpt-5.1",
+    "finish_reason": "stop",
+    "usage": {
+      "prompt_tokens": 7184,
+      "completion_tokens": 7874,
+      "total_tokens": 15058,
+      "prompt_tokens_details": {
+        "cached_tokens": 6016,
+        "audio_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 7378,
+        "audio_tokens": 0,
+        "accepted_prediction_tokens": 0,
+        "rejected_prediction_tokens": 0
+      }
+    },
+    "ok": true
+  },
+  {
+    "attempt": 1,
+    "t": 1788678511.7703598,
+    "model": "deepseek-v4-flash",
+    "finish_reason": "stop",
+    "usage": {
+      "prompt_tokens": 7411,
+      "completion_tokens": 276,
+      "total_tokens": 7687,
+      "prompt_tokens_details": {
+        "cached_tokens": 7168
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 244
+      },
+      "prompt_cache_hit_tokens": 7168,
+      "prompt_cache_miss_tokens": 243
+    },
+    "ok": true
+  },
+  {
+    "attempt": 1,
+    "t": 1788678515.2282844,
+    "model": "deepseek-v4-flash",
+    "finish_reason": "stop",
+    "usage": {
+      "prompt_tokens": 7457,
+      "completion_tokens": 417,
+      "total_tokens": 7874,
+      "prompt_tokens_details": {
+        "cached_tokens": 7296
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 405
+      },
+      "prompt_cache_hit_tokens": 7296,
+      "prompt_cache_miss_tokens": 161
+    },
+    "ok": true
+  },
+  {
+    "attempt": 1,
+    "t": 1788678518.9165409,
+    "model": "gpt-5.1",
+    "finish_reason": "stop",
+    "usage": {
+      "prompt_tokens": 6493,
+      "completion_tokens": 528,
+      "total_tokens": 7021,
+      "prompt_tokens_details": {
+        "cached_tokens": 6016,
+        "audio_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "audio_tokens": 0,
+        "accepted_prediction_tokens": 0,
+        "rejected_prediction_tokens": 0
+      }
+    },
+    "ok": true
+  },
+  {
+    "attempt": 1,
+    "t": 1788678510.0213923,
+    "model": "deepseek-v4-flash",
+    "finish_reason": "stop",
+    "usage": {
+      "prompt_tokens": 7635,
+      "completion_tokens": 2124,
+      "total_tokens": 9759,
+      "prompt_tokens_details": {
+        "cached_tokens": 7552
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 2112
+      },
+      "prompt_cache_hit_tokens": 7552,
+      "prompt_cache_miss_tokens": 83
+    },
+    "ok": true
+  },
+  {
+    "attempt": 1,
+    "t": 1788678527.3546379,
+    "model": "gpt-5.1",
+    "finish_reason": "stop",
+    "usage": {
+      "prompt_tokens": 6671,
+      "completion_tokens": 498,
+      "total_tokens": 7169,
+      "prompt_tokens_details": {
+        "cached_tokens": 6016,
+        "audio_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "audio_tokens": 0,
+        "accepted_prediction_tokens": 0,
+        "rejected_prediction_tokens": 0
+      }
+    },
+    "ok": true
+  },
+  {
+    "attempt": 1,
+    "t": 1788678294.3060603,
+    "model": "deepseek-v4-flash",
+    "finish_reason": "stop",
+    "usage": {
+      "prompt_tokens": 7977,
+      "completion_tokens": 27740,
+      "total_tokens": 35717,
+      "prompt_tokens_details": {
+        "cached_tokens": 7680
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 27728
+      },
+      "prompt_cache_hit_tokens": 7680,
+      "prompt_cache_miss_tokens": 297
+    },
+    "ok": true
+  },
+  {
+    "attempt": 1,
+    "t": 1788678534.119059,
+    "model": "gpt-5.1",
+    "finish_reason": "stop",
+    "usage": {
+      "prompt_tokens": 7004,
+      "completion_tokens": 520,
+      "total_tokens": 7524,
+      "prompt_tokens_details": {
+        "cached_tokens": 6016,
+        "audio_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "audio_tokens": 0,
+        "accepted_prediction_tokens": 0,
+        "rejected_prediction_tokens": 0
+      }
+    },
+    "ok": true
+  },
+  {
+    "attempt": 1,
+    "t": 1788678532.1862266,
+    "model": "gpt-5.1",
+    "finish_reason": "stop",
+    "usage": {
+      "prompt_tokens": 7173,
+      "completion_tokens": 4598,
+      "total_tokens": 11771,
+      "prompt_tokens_details": {
+        "cached_tokens": 6016,
+        "audio_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 4084,
+        "audio_tokens": 0,
+        "accepted_prediction_tokens": 0,
+        "rejected_prediction_tokens": 0
+      }
+    },
+    "ok": true
+  },
+  {
+    "attempt": 1,
+    "t": 1788678523.648422,
+    "model": "gpt-5.1",
+    "finish_reason": "stop",
+    "usage": {
+      "prompt_tokens": 7025,
+      "completion_tokens": 5495,
+      "total_tokens": 12520,
+      "prompt_tokens_details": {
+        "cached_tokens": 6016,
+        "audio_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 5009,
+        "audio_tokens": 0,
+        "accepted_prediction_tokens": 0,
+        "rejected_prediction_tokens": 0
+      }
+    },
+    "ok": true
+  },
+  {
+    "attempt": 1,
+    "t": 1788678567.591156,
+    "model": "deepseek-v4-flash",
+    "finish_reason": "stop",
+    "usage": {
+      "prompt_tokens": 7468,
+      "completion_tokens": 469,
+      "total_tokens": 7937,
+      "prompt_tokens_details": {
+        "cached_tokens": 7168
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 435
+      },
+      "prompt_cache_hit_tokens": 7168,
+      "prompt_cache_miss_tokens": 300
+    },
+    "ok": true
+  },
+  {
+    "attempt": 1,
+    "t": 1788678571.6117597,
+    "model": "deepseek-v4-flash",
+    "finish_reason": "stop",
+    "usage": {
+      "prompt_tokens": 7516,
+      "completion_tokens": 554,
+      "total_tokens": 8070,
+      "prompt_tokens_details": {
+        "cached_tokens": 7424
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 542
+      },
+      "prompt_cache_hit_tokens": 7424,
+      "prompt_cache_miss_tokens": 92
+    },
+    "ok": true
+  },
+  {
+    "attempt": 1,
+    "t": 1788678577.661999,
+    "model": "gpt-5.1",
+    "finish_reason": "stop",
+    "usage": {
+      "prompt_tokens": 6551,
+      "completion_tokens": 472,
+      "total_tokens": 7023,
+      "prompt_tokens_details": {
+        "cached_tokens": 6016,
+        "audio_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "audio_tokens": 0,
+        "accepted_prediction_tokens": 0,
+        "rejected_prediction_tokens": 0
+      }
+    },
+    "ok": true
+  },
+  {
+    "attempt": 1,
+    "t": 1788678538.590807,
+    "model": "gpt-5.1",
+    "finish_reason": "stop",
+    "usage": {
+      "prompt_tokens": 7528,
+      "completion_tokens": 5753,
+      "total_tokens": 13281,
+      "prompt_tokens_details": {
+        "cached_tokens": 6016,
+        "audio_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 5233,
+        "audio_tokens": 0,
+        "accepted_prediction_tokens": 0,
+        "rejected_prediction_tokens": 0
+      }
+    },
+    "ok": true
+  },
+  {
+    "attempt": 1,
+    "t": 1788678581.3477979,
+    "model": "gpt-5.1",
+    "finish_reason": "stop",
+    "usage": {
+      "prompt_tokens": 7027,
+      "completion_tokens": 4745,
+      "total_tokens": 11772,
+      "prompt_tokens_details": {
+        "cached_tokens": 6016,
+        "audio_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 4287,
+        "audio_tokens": 0,
+        "accepted_prediction_tokens": 0,
+        "rejected_prediction_tokens": 0
+      }
+    },
+    "ok": true
+  },
+  {
+    "attempt": 1,
+    "t": 1788678408.619716,
+    "model": "deepseek-v4-flash",
+    "finish_reason": "stop",
+    "usage": {
+      "prompt_tokens": 7863,
+      "completion_tokens": 24530,
+      "total_tokens": 32393,
+      "prompt_tokens_details": {
+        "cached_tokens": 7680
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 24518
+      },
+      "prompt_cache_hit_tokens": 7680,
+      "prompt_cache_miss_tokens": 183
+    },
+    "ok": true
+  },
+  {
+    "attempt": 1,
+    "t": 1788678620.1671321,
+    "model": "gpt-5.1",
+    "finish_reason": "stop",
+    "usage": {
+      "prompt_tokens": 6899,
+      "completion_tokens": 423,
+      "total_tokens": 7322,
+      "prompt_tokens_details": {
+        "cached_tokens": 6016,
+        "audio_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "audio_tokens": 0,
+        "accepted_prediction_tokens": 0,
+        "rejected_prediction_tokens": 0
+      }
+    },
+    "ok": true
+  },
+  {
+    "attempt": 1,
+    "t": 1788678569.1153767,
+    "model": "deepseek-v4-flash",
+    "finish_reason": "stop",
+    "usage": {
+      "prompt_tokens": 7652,
+      "completion_tokens": 11440,
+      "total_tokens": 19092,
+      "prompt_tokens_details": {
+        "cached_tokens": 7168
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 11406
+      },
+      "prompt_cache_hit_tokens": 7168,
+      "prompt_cache_miss_tokens": 484
+    },
+    "ok": true
+  },
+  {
+    "attempt": 1,
+    "t": 1788678662.5359704,
+    "model": "deepseek-v4-flash",
+    "finish_reason": "stop",
+    "usage": {
+      "prompt_tokens": 7700,
+      "completion_tokens": 2041,
+      "total_tokens": 9741,
+      "prompt_tokens_details": {
+        "cached_tokens": 7552
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 2029
+      },
+      "prompt_cache_hit_tokens": 7552,
+      "prompt_cache_miss_tokens": 148
+    },
+    "ok": true
+  },
+  {
+    "attempt": 1,
+    "t": 1788678679.8777404,
+    "model": "gpt-5.1",
+    "finish_reason": "stop",
+    "usage": {
+      "prompt_tokens": 6734,
+      "completion_tokens": 516,
+      "total_tokens": 7250,
+      "prompt_tokens_details": {
+        "cached_tokens": 6016,
+        "audio_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "audio_tokens": 0,
+        "accepted_prediction_tokens": 0,
+        "rejected_prediction_tokens": 0
+      }
+    },
+    "ok": true
+  },
+  {
+    "attempt": 1,
+    "t": 1788678684.191126,
+    "model": "gpt-5.1",
+    "finish_reason": "stop",
+    "usage": {
+      "prompt_tokens": 7254,
+      "completion_tokens": 2496,
+      "total_tokens": 9750,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 1980,
+        "audio_tokens": 0,
+        "accepted_prediction_tokens": 0,
+        "rejected_prediction_tokens": 0
+      }
+    },
+    "ok": true
+  },
+  {
+    "attempt": 1,
+    "t": 1788678624.442479,
+    "model": "gpt-5.1",
+    "finish_reason": "stop",
+    "usage": {
+      "prompt_tokens": 7326,
+      "completion_tokens": 8822,
+      "total_tokens": 16148,
+      "prompt_tokens_details": {
+        "cached_tokens": 6016,
+        "audio_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 8379,
+        "audio_tokens": 0,
+        "accepted_prediction_tokens": 0,
+        "rejected_prediction_tokens": 0
+      }
+    },
+    "ok": true
+  }
+]

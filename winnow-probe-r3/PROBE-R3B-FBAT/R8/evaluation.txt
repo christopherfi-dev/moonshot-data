@@ -1,0 +1,21 @@
+Customer Success Associate – Requirements Extracted (parseable only)
+
+- MANDATORY — Bachelor's degree in business, marketing, or a related field.
+- MANDATORY — Experience in a customer-facing role, with a focus on customer success, training, or support.
+- MANDATORY — Strong understanding of customer success principles and practices, with the ability to translate customer needs into actionable strategies.
+- MANDATORY — Excellent problem-solving and analytical skills, with a data-driven approach to designing and delivering customer interventions.
+- MANDATORY — Exceptional communication and interpersonal skills, with the ability to engage and educate customers effectively.
+- MANDATORY — Proficiency in both written and spoken English and Thai.
+
+All other listed "requirements" are non-parseable in this reality and exert no effect.
+
+R8 Kanokwan Ratanaporn - Advance – Verify
+
+✅ Bachelor's degree in business, marketing, or a related field.: (MET-EVID: Bachelor of Business Administration (Marketing), 2016–2020)
+✅ Experience in a customer-facing role, with a focus on customer success, training, or support.: (MET-EVID: Customer Success Executive and Client Support Specialist roles handling onboarding, training, and support from 2020–2026)
+✅ Strong understanding of customer success principles and practices, with the ability to translate customer needs into actionable strategies.: (MET-EVID: Improved renewal rate from 78% to 91% via proactive usage monitoring and interventions; rebuilt onboarding checklist to reduce time-to-first-report from 21 to 9 days)
+✅ Excellent problem-solving and analytical skills, with a data-driven approach to designing and delivering customer interventions.: (MET-EVID: Used Metabase dashboards and login metrics to trigger outreach; redesigned onboarding process based on performance data)
+✅ Exceptional communication and interpersonal skills, with the ability to engage and educate customers effectively.: (MET-EVID: Ran 3-session training sequences for each new HR team; wrote 22 help-centre articles that reduced ticket volume by 40%; handled 30–40 tickets per day with 85% resolved within one business day)
+⚠️ REQ-LANG Proficiency in both written and spoken English and Thai.: (verification required - Thai fluency stated; English listed as basic and used for help-centre articles; interview should confirm level vs role needs)
+
+[AUDIT-2026-009-0001]

@@ -1,0 +1,35 @@
+{
+  "e1": {
+    "base_url": "https://api.deepseek.com/chat/completions",
+    "api_key_env": "DEEPSEEK_API_KEY",
+    "params": {
+      "model": "deepseek-v4-flash",
+      "max_tokens": 65536,
+      "thinking": {
+        "type": "enabled"
+      },
+      "reasoning_effort": "high"
+    }
+  },
+  "e2": {
+    "base_url": "https://api.openai.com/v1/chat/completions",
+    "api_key_env": "OPENAI_API_KEY",
+    "params": {
+      "model": "gpt-5.1",
+      "max_completion_tokens": 8000,
+      "temperature": 0.0,
+      "reasoning_effort": "none"
+    }
+  },
+  "e2_pass2": {
+    "base_url": "https://api.openai.com/v1/chat/completions",
+    "api_key_env": "OPENAI_API_KEY",
+    "params": {
+      "model": "gpt-5.1",
+      "max_completion_tokens": 32000,
+      "reasoning_effort": "high"
+    }
+  },
+  "e1_asset": "stage1-bootstrap-v2.7.txt",
+  "e2_asset": "stage3-bootstrap-v27.7.txt"
+}

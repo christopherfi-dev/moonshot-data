@@ -1,0 +1,15 @@
+L1: Somchai Wongsakul
+L2: Chiang Mai, Thailand · somchai.w@example.com
+L3: EXPERIENCE
+L4: Customer Success Executive, Sirikan Software Co., Ltd. — Sep 2022 – Aug 2026
+L5: Onboarded 46 B2B accounts onto the HR analytics platform; ran a 3-session training sequence for each new HR team
+L6: Cut time-to-first-report for new accounts from 21 days to 9 days by rebuilding the onboarding checklist
+L7: Reviewed weekly usage dashboards in Metabase and contacted accounts whose logins fell below 2 per week
+L8: Renewal rate on my book rose from 78% to 91% between 2023 and 2025
+L9: Client Support Specialist, Tawan Logistics Platform — Jun 2020 – Feb 2022
+L10: Handled 30–40 tickets per day across email and LINE OA; resolved 85% within one business day
+L11: Wrote 22 help-centre articles in Thai and English; ticket volume on those topics fell 40%
+L12: SKILLS
+L13: HubSpot, Zendesk, Metabase, Google Sheets, LINE Official Account, Notion
+L14: LANGUAGES
+L15: Thai – native fluency; English – professional working proficiency (IELTS 7.0, 2021)

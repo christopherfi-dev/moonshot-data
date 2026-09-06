@@ -1,0 +1,25 @@
+HR Operations & Recruitment Systems Manager – Requirements Extracted (parseable only)
+
+- MANDATORY — Bachelor's degree or equivalent professional experience in HR operations, recruitment operations, or workforce systems  
+- MANDATORY — 5+ years of experience in HR operations, recruitment operations, talent acquisition, people operations, or workforce planning  
+- MANDATORY — Experience using an ATS or HRIS such as Workday, Greenhouse, Lever, BambooHR, Manatal, Zoho Recruit, SmartRecruiters, SAP SuccessFactors, or similar  
+- MANDATORY — Ability to build reports, trackers, or dashboards using Excel, Google Sheets, Looker Studio, Power BI, Tableau, or similar tools  
+- MANDATORY — Experience improving recruitment workflows, onboarding, retention, scheduling, or employee data processes  
+- MANDATORY — Experience handling confidential employee or candidate information  
+- MANDATORY — Strong English communication skills for reports and leadership updates  
+- ESSENTIAL-FUNCTION — Able to work hybrid in Bangkok 3 days per week  
+
+All other listed "requirements" are non-parseable in this reality and exert no effect.
+
+R1 Krit Rattanapong - Advance – Verify
+
+✅ Bachelor's degree or equivalent professional experience in HR operations, recruitment operations, or workforce systems: (MET-EVID — BBA degree listed under Education)  
+✅ 5+ years of experience in HR operations, recruitment operations, talent acquisition, people operations, or workforce planning: (MET-EVID — Recruitment Officer 2019–2021 and Senior Talent Acquisition Executive 2021–present provide 5+ years in recruitment-focused roles)  
+✅ Experience using an ATS or HRIS such as Workday, Greenhouse, Lever, BambooHR, Manatal, Zoho Recruit, SmartRecruiters, SAP SuccessFactors, or similar: (MET-EVID — Skills list includes Workday, Greenhouse, SAP SuccessFactors, BambooHR, Manatal, Lever)  
+✅ Ability to build reports, trackers, or dashboards using Excel, Google Sheets, Looker Studio, Power BI, Tableau, or similar tools: (MET-EVID — Skills list includes Power BI, Tableau, Looker Studio; experience bullet notes leadership dashboards that improved hiring efficiency)  
+✅ Experience improving recruitment workflows, onboarding, retention, scheduling, or employee data processes: (MET-EVID — Built leadership dashboards that improved hiring efficiency by 40%, directly enhancing recruitment workflows and decision-making)  
+✅ Experience handling confidential employee or candidate information: (MET-INF — Recruitment Officer and Senior Talent Acquisition Executive roles inherently involve handling confidential candidate and employee data)  
+⚠️ REQ-LANG Strong English communication skills for reports and leadership updates: (verification required — record does not explicitly state English ability; interview should confirm communication level)  
+✅ Able to work hybrid in Bangkok 3 days per week: (NO-CONTRA — no stated limitation affecting ability to follow a hybrid schedule; confirm details during hiring process)
+
+[AUDIT-2026-001-0002]

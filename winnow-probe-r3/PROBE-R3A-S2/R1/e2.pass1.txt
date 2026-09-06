@@ -1,0 +1,21 @@
+Customer Success Associate – Requirements Extracted (parseable only)
+
+- MANDATORY — Bachelor's degree in business, marketing, or a related field.
+- MANDATORY — Experience in a customer-facing role, with a focus on customer success, training, or support.
+- MANDATORY — Strong understanding of customer success principles and practices, with the ability to translate customer needs into actionable strategies.
+- MANDATORY — Excellent problem-solving and analytical skills, with a data-driven approach to designing and delivering customer interventions.
+- MANDATORY — Exceptional communication and interpersonal skills, with the ability to engage and educate customers effectively.
+- MANDATORY — Proficiency in both written and spoken English and Thai.
+
+All other listed "requirements" are non-parseable in this reality and exert no effect.
+
+R1 RUNYARIN L. - Do Not Advance
+
+✅ Bachelor's degree in business, marketing, or a related field.: (MET-EVID) Bachelor of Arts degree stated in education section.
+❌ Experience in a customer-facing role, with a focus on customer success, training, or support.: Not Met (record shows roles in media, advertising, and digital campaign management; no explicit customer success, training, or support focus is stated in the non-NULL content).
+⚖️ Built and managed multiple advertising and digital campaign accounts over 10+ years → Strong understanding of customer success principles and practices, with the ability to translate customer needs into actionable strategies.: (equivalence explanation) Long-term account management and digital campaign responsibilities imply understanding of client objectives and translating them into strategic execution.
+⚖️ 10+ years managing campaigns with measurable KPIs and impact analysis → Excellent problem-solving and analytical skills, with a data-driven approach to designing and delivering customer interventions.: (equivalence explanation) Experience with analytics tools and KPI-driven campaigns demonstrates data-based problem solving and intervention design.
+⚖️ Multiple account manager and consultant roles involving presentations to stakeholders → Exceptional communication and interpersonal skills, with the ability to engage and educate customers effectively.: (equivalence explanation) Roles that include consulting and presenting to stakeholders indicate strong communication and interpersonal engagement.
+⚠️ REQ-LANG Proficiency in both written and spoken English and Thai.: (verification required - record silent on specific languages; interview prompt)
+
+[AUDIT-2026-001-0001]

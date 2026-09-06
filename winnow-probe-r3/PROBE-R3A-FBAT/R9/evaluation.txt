@@ -1,0 +1,21 @@
+Customer Success Associate – Requirements Extracted (parseable only)
+
+- MANDATORY — Bachelor's degree in business, marketing, or a related field.
+- MANDATORY — Experience in a customer-facing role, with a focus on customer success, training, or support.
+- MANDATORY — Strong understanding of customer success principles and practices, with the ability to translate customer needs into actionable strategies.
+- MANDATORY — Excellent problem-solving and analytical skills, with a data-driven approach to designing and delivering customer interventions.
+- MANDATORY — Exceptional communication and interpersonal skills, with the ability to engage and educate customers effectively.
+- MANDATORY — Proficiency in both written and spoken English and Thai.
+
+All other listed "requirements" are non-parseable in this reality and exert no effect.
+
+R9 Arisa Boonmee - Advance
+
+✅ Bachelor's degree in business, marketing, or a related field.: (MET-EVID) Bachelor of Business Administration (Marketing), 2016–2020.
+✅ Experience in a customer-facing role, with a focus on customer success, training, or support.: (MET-EVID) Multi-year work as Customer Support Specialist (2021–2026) and Customer Service Officer (2019–2021) in customer-facing support/service positions.
+⚖️ Built capability in customer success through multi-year support roles → Strong understanding of customer success principles and practices, with the ability to translate customer needs into actionable strategies.: (equivalence) 5+ years in customer support/service roles reasonably demonstrate applied customer success practices and translating customer needs into actions, despite titles not explicitly stating “customer success.”
+⚖️ Multi-year support roles resolving customer issues → Excellent problem-solving and analytical skills, with a data-driven approach to designing and delivering customer interventions.: (equivalence) Sustained work as Customer Support Specialist and Customer Service Officer implies regular problem-solving using customer information to resolve issues and improve outcomes.
+⚖️ Customer-facing support and service roles → Exceptional communication and interpersonal skills, with the ability to engage and educate customers effectively.: (equivalence) Long-term success in customer support and service roles requires strong verbal and written communication and ongoing customer education.
+✅ Proficiency in both written and spoken English and Thai.: (MET-EVID) Thai listed with fluency; English listed with professional working proficiency.
+
+[AUDIT-2026-009-9364]

@@ -1,0 +1,86 @@
+[
+  {
+    "attempt": 1,
+    "t": 1788679819.6242795,
+    "model": "deepseek-v4-flash",
+    "finish_reason": "stop",
+    "usage": {
+      "prompt_tokens": 8346,
+      "completion_tokens": 33854,
+      "total_tokens": 42200,
+      "prompt_tokens_details": {
+        "cached_tokens": 6272
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 33492
+      },
+      "prompt_cache_hit_tokens": 6272,
+      "prompt_cache_miss_tokens": 2074
+    },
+    "ok": true
+  },
+  {
+    "attempt": 1,
+    "t": 1788680089.9031444,
+    "model": "deepseek-v4-flash",
+    "finish_reason": "stop",
+    "usage": {
+      "prompt_tokens": 8722,
+      "completion_tokens": 34340,
+      "total_tokens": 43062,
+      "prompt_tokens_details": {
+        "cached_tokens": 8320
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 33957
+      },
+      "prompt_cache_hit_tokens": 8320,
+      "prompt_cache_miss_tokens": 402
+    },
+    "ok": true
+  },
+  {
+    "attempt": 1,
+    "t": 1788680342.8729377,
+    "model": "gpt-5.1",
+    "finish_reason": "stop",
+    "usage": {
+      "prompt_tokens": 7775,
+      "completion_tokens": 522,
+      "total_tokens": 8297,
+      "prompt_tokens_details": {
+        "cached_tokens": 4992,
+        "audio_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "audio_tokens": 0,
+        "accepted_prediction_tokens": 0,
+        "rejected_prediction_tokens": 0
+      }
+    },
+    "ok": true
+  },
+  {
+    "attempt": 1,
+    "t": 1788680349.037393,
+    "model": "gpt-5.1",
+    "finish_reason": "stop",
+    "usage": {
+      "prompt_tokens": 8301,
+      "completion_tokens": 11505,
+      "total_tokens": 19806,
+      "prompt_tokens_details": {
+        "cached_tokens": 4992,
+        "audio_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 11024,
+        "audio_tokens": 0,
+        "accepted_prediction_tokens": 0,
+        "rejected_prediction_tokens": 0
+      }
+    },
+    "ok": true
+  }
+]

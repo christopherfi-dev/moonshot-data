@@ -1,0 +1,27 @@
+[NULL FILTRATION — R1]
+RESUME: R1
+NULL LINES:
+L24 — Publisher Monetization & Yield Optimization
+L26 — Programmatic Media Buying (RTB, Header Bidding)
+L28 — SSPs, Ad Servers, Pixel & SDK Integration
+L31 — Client Relations & Cross-Functional Team Leadership
+L46 — Led full-funnel programmatic campaigns for SEA advertisers
+L49 — Supported yield improvement through strategic bidding and inventory insights
+L51 — Worked closely with internal tech teams for pixel setup, fraud reduction, and postback tracking
+L57 — Crafted integrated media strategies for luxury and auto clients
+L59 — Delivered performance-based media plans with measurable KPIs
+L61 — Supervised cross-functional teams ensuring timely and accurate campaign execution
+L65 — Handled programmatic campaign setup via ad servers and SEM tools
+L67 — Troubleshot pixel integrations and improved web analytics configurations
+L69 — Acted as liaison between tech and business teams to enhance delivery
+L77 — Managed end-to-end marketing campaigns from ideation to impact analysis
+L78 — Executed SEO, social media content, and digital outreach (SMS, Email)
+L79 — Developed brand assets and visuals to support creative marketing strategies
+L80 — Contributed to brand building with hands-on design and content creation
+L83 — Supported go-to-market strategy development and secured internal alignment
+L84 — Presented digital platforms to C-level stakeholders and partners
+L85 — Planned and executed cross-channel marketing campaigns, including website and social media content
+L90 — Gained deep product knowledge to support client pitches and campaign execution
+L92 — Provided technical guidance for pixel setup and campaign implementation
+L94 — Collaborated with Sales, Business Development, and Creative teams to plan, execute, and optimize campaigns based on client objectives
+[FILTRATION-R1]

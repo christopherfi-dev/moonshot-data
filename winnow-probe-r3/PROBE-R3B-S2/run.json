@@ -1,0 +1,20 @@
+{
+  "run_id": "20260906-073019",
+  "mode": "full",
+  "boundary_sha256": "05bac5c9897c9dc298b1d925a5478d11afa76b3416082d78aaaf1671272d5bb5",
+  "models": {
+    "e1": "deepseek-v4-flash",
+    "e2": "gpt-5.1",
+    "e2_pass2": "gpt-5.1",
+    "extraction": "gpt-5.1"
+  },
+  "reasoning_effort": {
+    "e2": "none",
+    "e2_pass2": "high",
+    "extraction": "high"
+  },
+  "jd": "fixtures/happily-csa-jd.txt",
+  "resumes": [
+    "fixtures/runyarin.txt"
+  ]
+}

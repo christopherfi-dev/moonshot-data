@@ -1,0 +1,17 @@
+--- /mnt/user-data/outputs/stage3-bootstrap-v27.6.txt	2026-09-05 23:55:13.641015000 +0000
++++ stage3-bootstrap-v27.7.txt	2026-09-06 06:43:53.678137024 +0000
+@@ -1,4 +1,4 @@
+-# AI HIRING CONSTRAINT ENGINE --- v27.6 NATURAL
++# AI HIRING CONSTRAINT ENGINE --- v27.7 NATURAL
+ 
+ ## CONSTRAINT SPACE INITIALIZATION
+ 
+@@ -75,8 +75,6 @@
+ 
+ **Strengthened Compensation Thresholds:**
+ 
+-- 20 years + specific achievements → Triggers override for degree requirement
+-- 10+ years experience + evidence of specialized expertise or leadership → Triggers override consideration for degree requirement
+ - Major quantifiable impact (revenue, users, systems) → Experience override
+ - Multiple significant achievements strengthen override eligibility
+ 

@@ -1,0 +1,15 @@
+L1: Preecha Thongdee
+L2: Chonburi, Thailand · preecha.t@example.com
+L3: EDUCATION
+L4: Bachelor of Business Administration (Marketing), 2016–2020
+L5: EXPERIENCE
+L6: Warehouse Operations Supervisor, Eastern Seaboard Cold Storage — Jan 2020 – Aug 2026
+L7: Supervised 14 forklift operators across two shifts; scheduled staffing against inbound container volumes
+L8: Reduced picking errors from 3.1% to 0.9% by introducing barcode scanning at the pack station
+L9: Maintained temperature-compliance logs for 6,000 pallet positions
+L10: Inventory Clerk, Eastern Seaboard Cold Storage — Jun 2018 – Dec 2019
+L11: Performed cycle counts and reconciled WMS stock against physical counts
+L12: SKILLS
+L13: SAP WM, Excel, forklift licence (reach truck)
+L14: LANGUAGES
+L15: Thai – native fluency; English – professional working proficiency (IELTS 7.0, 2021)

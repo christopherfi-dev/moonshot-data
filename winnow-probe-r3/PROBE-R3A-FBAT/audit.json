@@ -1,0 +1,566 @@
+[
+  {
+    "t": 1788678239.1047487,
+    "stage": "intake",
+    "label": "jd",
+    "sha256": "de3157ccc86efe7e45f1e108a036476e50b90b48943fd60a743a57f4cbef8e13",
+    "source": "fixtures/happily-csa-jd.txt"
+  },
+  {
+    "t": 1788678269.599659,
+    "stage": "extraction",
+    "label": "requirement_set.frozen",
+    "sha256": "e17f5f1c14f337914cbc9e4bd767c34687b35f319d9a1f56c39919009e0ffa5b",
+    "cache": "/tmp/claude-0/-home-user-moonshot-data/f6f619be-7e75-5fe0-b6e2-cbef82fc2dac/scratchpad/work/winnow/pipeline/cache/requirement-sets/de3157ccc86efe7e45f1e108a036476e50b90b48943fd60a743a57f4cbef8e13-d2216aa4379a57369cb664d62e998e42475f0499ebbcd538e058c2d3268b0b7d.txt"
+  },
+  {
+    "t": 1788678269.6721056,
+    "stage": "intake",
+    "label": "R1.raw",
+    "sha256": "36afc69c70c0bc627ae3e89d04dcf35128b2089d718676cefafd60d83ed703d1",
+    "source": "fixtures/f-battery/F1_clean.docx"
+  },
+  {
+    "t": 1788678269.6721332,
+    "stage": "intake",
+    "label": "R1.numbered",
+    "sha256": "9107f0de6d1baee8368e299c60b96ee2b129f8bcaf82a1f159dc030aee57d0a5",
+    "lines": 17
+  },
+  {
+    "t": 1788678269.6777222,
+    "stage": "intake",
+    "label": "R2.raw",
+    "sha256": "fd9df837083a2d20bb8e9fce92a27d41f00009f92ea231a712f23420d29cbd6e",
+    "source": "fixtures/f-battery/F2_clean_fluffed.docx"
+  },
+  {
+    "t": 1788678269.6777444,
+    "stage": "intake",
+    "label": "R2.numbered",
+    "sha256": "092079d772eba1d5d70d2d9dae92233476274401d873a11f14442b26498a5517",
+    "lines": 28
+  },
+  {
+    "t": 1788678269.6823518,
+    "stage": "intake",
+    "label": "R3.raw",
+    "sha256": "c0c62eb6f05496837ae1884d3a125f193ba41a6026db5db8194f9be52a9d8bd9",
+    "source": "fixtures/f-battery/F3_no_degree.docx"
+  },
+  {
+    "t": 1788678269.6823678,
+    "stage": "intake",
+    "label": "R3.numbered",
+    "sha256": "c82ad37fb9fb1b1f6003b234b3176b6c32b436025f946c16b84c02d8b12e785f",
+    "lines": 15
+  },
+  {
+    "t": 1788678269.688073,
+    "stage": "intake",
+    "label": "R4.raw",
+    "sha256": "9d23ec84a697dc4145df89c1d59edb54a11449f7debc19cdebbf6f9074aea927",
+    "source": "fixtures/f-battery/F4_no_degree_fluffed.docx"
+  },
+  {
+    "t": 1788678269.6880908,
+    "stage": "intake",
+    "label": "R4.numbered",
+    "sha256": "17b2cfef470305ba17f5e8ca0033850d4ff5f3873856e1a684b0b56613c417c1",
+    "lines": 26
+  },
+  {
+    "t": 1788678285.949823,
+    "stage": "e1",
+    "label": "R3.pass1",
+    "sha256": "5294d8f55444e8817a66e387a2444eee0ffd93528a441fc4a0961a364d0bec0f"
+  },
+  {
+    "t": 1788678285.9498422,
+    "stage": "e1",
+    "label": "R3.pass2",
+    "sha256": "e4f8125965f1ff8e45e893ed031c55dbe659eab29a023bf38e5995597b7a4b0e"
+  },
+  {
+    "t": 1788678285.9498448,
+    "stage": "e1",
+    "label": "R3.null_list",
+    "sha256": "5294d8f55444e8817a66e387a2444eee0ffd93528a441fc4a0961a364d0bec0f"
+  },
+  {
+    "t": 1788678313.085717,
+    "stage": "e1",
+    "label": "R1.pass1",
+    "sha256": "4fa1ce8a08af6dae02cc9bf9c964980ea6e2754756d140b8874d1596f7532b0e"
+  },
+  {
+    "t": 1788678313.085739,
+    "stage": "e1",
+    "label": "R1.pass2",
+    "sha256": "e4f8125965f1ff8e45e893ed031c55dbe659eab29a023bf38e5995597b7a4b0e"
+  },
+  {
+    "t": 1788678313.0857413,
+    "stage": "e1",
+    "label": "R1.null_list",
+    "sha256": "4fa1ce8a08af6dae02cc9bf9c964980ea6e2754756d140b8874d1596f7532b0e"
+  },
+  {
+    "t": 1788678337.760774,
+    "stage": "e2",
+    "label": "R3.pass1",
+    "sha256": "004e61ee21a1a178bdbad9f164bb294aa621a20c5c38656e7b4ab91f09989602"
+  },
+  {
+    "t": 1788678337.7608006,
+    "stage": "e2",
+    "label": "R3.pass2",
+    "sha256": "9454c46221d5d1521ed2d482a7f79b9ba5e44ef5fe93d1784a5c78530fce9224"
+  },
+  {
+    "t": 1788678337.7608116,
+    "stage": "e2",
+    "label": "R3.evaluation",
+    "sha256": "9454c46221d5d1521ed2d482a7f79b9ba5e44ef5fe93d1784a5c78530fce9224"
+  },
+  {
+    "t": 1788678337.7651446,
+    "stage": "intake",
+    "label": "R5.raw",
+    "sha256": "d8ceb6b7c70c20f88536d3d93abc0885332dc7156465d22361c356856c316ab8",
+    "source": "fixtures/f-battery/F5_wrong_domain.docx"
+  },
+  {
+    "t": 1788678337.7651591,
+    "stage": "intake",
+    "label": "R5.numbered",
+    "sha256": "60a50cebe2a0545eaee655923bc084e67c3476a754d900cb97062363c31f4e80",
+    "lines": 15
+  },
+  {
+    "t": 1788678353.9926775,
+    "stage": "e2",
+    "label": "R1.pass1",
+    "sha256": "1b8e31fd5158684202bb76160108b865c3c5713a4ef0333eceefa2f10e45d1b3"
+  },
+  {
+    "t": 1788678353.9927032,
+    "stage": "e2",
+    "label": "R1.pass2",
+    "sha256": "4c79925be96ec4ff30f6b94f3bf1458d224eca5d0e4b76df015c2d2c5dc64955"
+  },
+  {
+    "t": 1788678353.9927132,
+    "stage": "e2",
+    "label": "R1.evaluation",
+    "sha256": "4c79925be96ec4ff30f6b94f3bf1458d224eca5d0e4b76df015c2d2c5dc64955"
+  },
+  {
+    "t": 1788678353.9974787,
+    "stage": "intake",
+    "label": "R6.raw",
+    "sha256": "e2fc5937bbc604657374bc98f6287af463689bae137923b820b96f428ce5046b",
+    "source": "fixtures/f-battery/F6_wrong_domain_fluffed.docx"
+  },
+  {
+    "t": 1788678353.9974954,
+    "stage": "intake",
+    "label": "R6.numbered",
+    "sha256": "a80651def4851c533f4e048c5bcf5eaf5ac730286cd4033d86fe4d5576eb242a",
+    "lines": 25
+  },
+  {
+    "t": 1788678367.7903104,
+    "stage": "e1",
+    "label": "R2.pass1",
+    "sha256": "643e65ef7ff9dc94ec8bdb4cf5ea6330f1831937e683ebdc7fd16ddedc6d55d0"
+  },
+  {
+    "t": 1788678367.790331,
+    "stage": "e1",
+    "label": "R2.pass2",
+    "sha256": "e4f8125965f1ff8e45e893ed031c55dbe659eab29a023bf38e5995597b7a4b0e"
+  },
+  {
+    "t": 1788678367.790333,
+    "stage": "e1",
+    "label": "R2.null_list",
+    "sha256": "643e65ef7ff9dc94ec8bdb4cf5ea6330f1831937e683ebdc7fd16ddedc6d55d0"
+  },
+  {
+    "t": 1788678391.7135417,
+    "stage": "e1",
+    "label": "R5.pass1",
+    "sha256": "af62650624c6175ac9a11490e7fd3d4a2806537b856c08c6d2559a7f7045b43f"
+  },
+  {
+    "t": 1788678391.713565,
+    "stage": "e1",
+    "label": "R5.pass2",
+    "sha256": "e4f8125965f1ff8e45e893ed031c55dbe659eab29a023bf38e5995597b7a4b0e"
+  },
+  {
+    "t": 1788678391.7135673,
+    "stage": "e1",
+    "label": "R5.null_list",
+    "sha256": "af62650624c6175ac9a11490e7fd3d4a2806537b856c08c6d2559a7f7045b43f"
+  },
+  {
+    "t": 1788678427.6260934,
+    "stage": "e2",
+    "label": "R2.pass1",
+    "sha256": "67ba95dfe3d8dbf76abf7c391f130ad92d9177d9787f1c1d09e6a53704dbf2d4"
+  },
+  {
+    "t": 1788678427.6261182,
+    "stage": "e2",
+    "label": "R2.pass2",
+    "sha256": "8a46c7a50af4d890619b032a48c07b8bb69d90aa8757b155b9791ab7ddcabe9a"
+  },
+  {
+    "t": 1788678427.6261282,
+    "stage": "e2",
+    "label": "R2.evaluation",
+    "sha256": "8a46c7a50af4d890619b032a48c07b8bb69d90aa8757b155b9791ab7ddcabe9a"
+  },
+  {
+    "t": 1788678427.6307058,
+    "stage": "intake",
+    "label": "R7.raw",
+    "sha256": "65ccda3b15c107b9e34ffbe8642381aa2694243a14d8bc143e1ba30c495cacde",
+    "source": "fixtures/f-battery/F7_lang_absent.docx"
+  },
+  {
+    "t": 1788678427.6307218,
+    "stage": "intake",
+    "label": "R7.numbered",
+    "sha256": "58dd5aa316ac5f9b60c844e52952226bf0a99039377fd5d21351505577fdf809",
+    "lines": 17
+  },
+  {
+    "t": 1788678438.2797356,
+    "stage": "e1",
+    "label": "R7.pass1",
+    "sha256": "86a81b923fcf76d59c282c18607aa216bdc6fb319c95f389dca4a9d3c413ec6b"
+  },
+  {
+    "t": 1788678438.2797568,
+    "stage": "e1",
+    "label": "R7.pass2",
+    "sha256": "e4f8125965f1ff8e45e893ed031c55dbe659eab29a023bf38e5995597b7a4b0e"
+  },
+  {
+    "t": 1788678438.2797592,
+    "stage": "e1",
+    "label": "R7.null_list",
+    "sha256": "86a81b923fcf76d59c282c18607aa216bdc6fb319c95f389dca4a9d3c413ec6b"
+  },
+  {
+    "t": 1788678503.5165706,
+    "stage": "e2",
+    "label": "R5.pass1",
+    "sha256": "eeb8aa0d5a797bd8fcec0306101097c193420a9dca4a1ae6673699a9cd55f47f"
+  },
+  {
+    "t": 1788678503.5170388,
+    "stage": "e2",
+    "label": "R5.pass2",
+    "sha256": "f42d8118a10cee8738d0f050e76a65b70b80a680b9d57a503b6d28cada612504"
+  },
+  {
+    "t": 1788678503.5170522,
+    "stage": "e2",
+    "label": "R5.evaluation",
+    "sha256": "f42d8118a10cee8738d0f050e76a65b70b80a680b9d57a503b6d28cada612504"
+  },
+  {
+    "t": 1788678503.543228,
+    "stage": "intake",
+    "label": "R8.raw",
+    "sha256": "f053b501ef2267f50114f2b15c6ca0ed1a5c2adf95f57893f150e00be79927c1",
+    "source": "fixtures/f-battery/F8_lang_partial.docx"
+  },
+  {
+    "t": 1788678503.5432508,
+    "stage": "intake",
+    "label": "R8.numbered",
+    "sha256": "5860301b87b35d56b2255ab609adba0fff1e4b9171ce940f6116d62c34b67c9b",
+    "lines": 17
+  },
+  {
+    "t": 1788678511.7653103,
+    "stage": "e2",
+    "label": "R7.pass1",
+    "sha256": "e5186fd298f520c27fe471f8824bac2b0339d8a6b689cc42649c5b74b70583a0"
+  },
+  {
+    "t": 1788678511.765336,
+    "stage": "e2",
+    "label": "R7.pass2",
+    "sha256": "e5186fd298f520c27fe471f8824bac2b0339d8a6b689cc42649c5b74b70583a0"
+  },
+  {
+    "t": 1788678511.7653458,
+    "stage": "e2",
+    "label": "R7.evaluation",
+    "sha256": "e5186fd298f520c27fe471f8824bac2b0339d8a6b689cc42649c5b74b70583a0"
+  },
+  {
+    "t": 1788678511.7699952,
+    "stage": "intake",
+    "label": "R9.raw",
+    "sha256": "98c0a80c5515c3199c7933576aabc593ed9555dff8972b2186722a2b68aebf4a",
+    "source": "fixtures/f-battery/F9_thin.docx"
+  },
+  {
+    "t": 1788678511.77001,
+    "stage": "intake",
+    "label": "R9.numbered",
+    "sha256": "86009e652f6738c7d8f121e81a193b034150773828bfaae9cd4691171217449a",
+    "lines": 9
+  },
+  {
+    "t": 1788678518.9152684,
+    "stage": "e1",
+    "label": "R9.pass1",
+    "sha256": "b6164a81e19a327092a1388eead9d638d2723d56913173669cde5fd4dab59f2c"
+  },
+  {
+    "t": 1788678518.9152932,
+    "stage": "e1",
+    "label": "R9.pass2",
+    "sha256": "e4f8125965f1ff8e45e893ed031c55dbe659eab29a023bf38e5995597b7a4b0e"
+  },
+  {
+    "t": 1788678518.9152968,
+    "stage": "e1",
+    "label": "R9.null_list",
+    "sha256": "b6164a81e19a327092a1388eead9d638d2723d56913173669cde5fd4dab59f2c"
+  },
+  {
+    "t": 1788678527.3543978,
+    "stage": "e1",
+    "label": "R8.pass1",
+    "sha256": "d0ce7cf06381fa0bc2bded506b83e905ef37de019ebd6279b33478c7ada2747b"
+  },
+  {
+    "t": 1788678527.3544154,
+    "stage": "e1",
+    "label": "R8.pass2",
+    "sha256": "e4f8125965f1ff8e45e893ed031c55dbe659eab29a023bf38e5995597b7a4b0e"
+  },
+  {
+    "t": 1788678527.3544173,
+    "stage": "e1",
+    "label": "R8.null_list",
+    "sha256": "d0ce7cf06381fa0bc2bded506b83e905ef37de019ebd6279b33478c7ada2747b"
+  },
+  {
+    "t": 1788678534.1186028,
+    "stage": "e1",
+    "label": "R4.pass1",
+    "sha256": "9400722aebe8fc312440c91184d9f3dd641cbd4f14500e743cfe99ed2f8c7a16"
+  },
+  {
+    "t": 1788678534.1186252,
+    "stage": "e1",
+    "label": "R4.pass2",
+    "sha256": "e4f8125965f1ff8e45e893ed031c55dbe659eab29a023bf38e5995597b7a4b0e"
+  },
+  {
+    "t": 1788678534.1186275,
+    "stage": "e1",
+    "label": "R4.null_list",
+    "sha256": "9400722aebe8fc312440c91184d9f3dd641cbd4f14500e743cfe99ed2f8c7a16"
+  },
+  {
+    "t": 1788678567.5821927,
+    "stage": "e2",
+    "label": "R8.pass1",
+    "sha256": "289dc55d5a4deb3790fe67111e359f96442d342350ec8288cbe1204a268d86a8"
+  },
+  {
+    "t": 1788678567.582228,
+    "stage": "e2",
+    "label": "R8.pass2",
+    "sha256": "657384edd25df3e89c06b9ea5c1345d6b861dda5d9ac4206676d25148dddd05a"
+  },
+  {
+    "t": 1788678567.5822446,
+    "stage": "e2",
+    "label": "R8.evaluation",
+    "sha256": "657384edd25df3e89c06b9ea5c1345d6b861dda5d9ac4206676d25148dddd05a"
+  },
+  {
+    "t": 1788678567.5904212,
+    "stage": "intake",
+    "label": "R10.raw",
+    "sha256": "3884f6bfc6857428a7854c7cd5b87816adcd15b6a1d97b9cbce7dd64e5b865e0",
+    "source": "fixtures/f-battery/F10_figures_only.docx"
+  },
+  {
+    "t": 1788678567.5904496,
+    "stage": "intake",
+    "label": "R10.numbered",
+    "sha256": "4adfd6abe66a1fb278a6d5a79cf21336dde2420eb991f10c4d942ebfe926c8a6",
+    "lines": 12
+  },
+  {
+    "t": 1788678569.1101224,
+    "stage": "e2",
+    "label": "R9.pass1",
+    "sha256": "00d41cfe48e75c49195f0b592991ac0581624ea5575069f5cc4d5db8095c545f"
+  },
+  {
+    "t": 1788678569.11015,
+    "stage": "e2",
+    "label": "R9.pass2",
+    "sha256": "ce5799938b1e2086d93a06cd2ccc7a23e4df6195e3ed6dda001eb936d9ea6a3b"
+  },
+  {
+    "t": 1788678569.11016,
+    "stage": "e2",
+    "label": "R9.evaluation",
+    "sha256": "ce5799938b1e2086d93a06cd2ccc7a23e4df6195e3ed6dda001eb936d9ea6a3b"
+  },
+  {
+    "t": 1788678569.1151395,
+    "stage": "intake",
+    "label": "R11.raw",
+    "sha256": "cd98404649a3a782fbc733fb3f593fce1015e836c29d1072c08df01d7adac598",
+    "source": "fixtures/f-battery/F11_bias_twin.docx"
+  },
+  {
+    "t": 1788678569.1151597,
+    "stage": "intake",
+    "label": "R11.numbered",
+    "sha256": "a1e5c59aa020d1bb629a39fa445a1ada505b0faab27991ca9c68cebec10f5cbb",
+    "lines": 19
+  },
+  {
+    "t": 1788678577.661746,
+    "stage": "e1",
+    "label": "R10.pass1",
+    "sha256": "11692cae9bb59b690c41b63393d87da70dba88bdb3d0b46132a4397ce2c04cab"
+  },
+  {
+    "t": 1788678577.661766,
+    "stage": "e1",
+    "label": "R10.pass2",
+    "sha256": "e4f8125965f1ff8e45e893ed031c55dbe659eab29a023bf38e5995597b7a4b0e"
+  },
+  {
+    "t": 1788678577.6617684,
+    "stage": "e1",
+    "label": "R10.null_list",
+    "sha256": "11692cae9bb59b690c41b63393d87da70dba88bdb3d0b46132a4397ce2c04cab"
+  },
+  {
+    "t": 1788678581.9682086,
+    "stage": "e2",
+    "label": "R4.pass1",
+    "sha256": "5b0001c65343559fb861df96999d764138ad2f8b0613f1447c54dc52aa3e5ebf"
+  },
+  {
+    "t": 1788678581.9682343,
+    "stage": "e2",
+    "label": "R4.pass2",
+    "sha256": "5b0001c65343559fb861df96999d764138ad2f8b0613f1447c54dc52aa3e5ebf"
+  },
+  {
+    "t": 1788678581.968244,
+    "stage": "e2",
+    "label": "R4.evaluation",
+    "sha256": "5b0001c65343559fb861df96999d764138ad2f8b0613f1447c54dc52aa3e5ebf"
+  },
+  {
+    "t": 1788678618.0782802,
+    "stage": "e2",
+    "label": "R10.pass1",
+    "sha256": "71ea93b5f4ad881996e1310ff3c35dc53c30f1d93093424f9188635c16f0fab2"
+  },
+  {
+    "t": 1788678618.0783088,
+    "stage": "e2",
+    "label": "R10.pass2",
+    "sha256": "81629793535063516b8a4f1a1598f1220b3ede7e4cdb080ddf7d888afe4c9303"
+  },
+  {
+    "t": 1788678618.0783217,
+    "stage": "e2",
+    "label": "R10.evaluation",
+    "sha256": "81629793535063516b8a4f1a1598f1220b3ede7e4cdb080ddf7d888afe4c9303"
+  },
+  {
+    "t": 1788678620.1666067,
+    "stage": "e1",
+    "label": "R6.pass1",
+    "sha256": "cb2b7c20ca79729e24c1d5255605ec7243f9199f98a149d5a7473423b67fcff4"
+  },
+  {
+    "t": 1788678620.1666298,
+    "stage": "e1",
+    "label": "R6.pass2",
+    "sha256": "e4f8125965f1ff8e45e893ed031c55dbe659eab29a023bf38e5995597b7a4b0e"
+  },
+  {
+    "t": 1788678620.1666324,
+    "stage": "e1",
+    "label": "R6.null_list",
+    "sha256": "cb2b7c20ca79729e24c1d5255605ec7243f9199f98a149d5a7473423b67fcff4"
+  },
+  {
+    "t": 1788678679.877478,
+    "stage": "e1",
+    "label": "R11.pass1",
+    "sha256": "dfe5182111827f0d3b8d152e634c82739389f4abdc3a6119640996ae8ff4fb71"
+  },
+  {
+    "t": 1788678679.877499,
+    "stage": "e1",
+    "label": "R11.pass2",
+    "sha256": "e4f8125965f1ff8e45e893ed031c55dbe659eab29a023bf38e5995597b7a4b0e"
+  },
+  {
+    "t": 1788678679.8775015,
+    "stage": "e1",
+    "label": "R11.null_list",
+    "sha256": "dfe5182111827f0d3b8d152e634c82739389f4abdc3a6119640996ae8ff4fb71"
+  },
+  {
+    "t": 1788678703.5170145,
+    "stage": "e2",
+    "label": "R11.pass1",
+    "sha256": "6be24609c6da5b9dfaa1ef98e52f5f6571a20ed07451b85f995c0f96a756fb57"
+  },
+  {
+    "t": 1788678703.5170457,
+    "stage": "e2",
+    "label": "R11.pass2",
+    "sha256": "6be24609c6da5b9dfaa1ef98e52f5f6571a20ed07451b85f995c0f96a756fb57"
+  },
+  {
+    "t": 1788678703.5170593,
+    "stage": "e2",
+    "label": "R11.evaluation",
+    "sha256": "6be24609c6da5b9dfaa1ef98e52f5f6571a20ed07451b85f995c0f96a756fb57"
+  },
+  {
+    "t": 1788678704.1707997,
+    "stage": "e2",
+    "label": "R6.pass1",
+    "sha256": "b4447a5a51172eb048ef58a6828089f44197cf24552ab9df984bd9756d345887"
+  },
+  {
+    "t": 1788678704.1708531,
+    "stage": "e2",
+    "label": "R6.pass2",
+    "sha256": "b837ed5c088993928d72e17fab59f9ceb61212ee3fc232c50ef07a5d88984412"
+  },
+  {
+    "t": 1788678704.1708634,
+    "stage": "e2",
+    "label": "R6.evaluation",
+    "sha256": "b837ed5c088993928d72e17fab59f9ceb61212ee3fc232c50ef07a5d88984412"
+  }
+]
